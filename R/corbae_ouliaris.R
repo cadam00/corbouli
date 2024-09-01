@@ -3,6 +3,9 @@ dftse <- function(x, low_freq, high_freq)
   if (low_freq < 0 || high_freq < 0){
     stop("Frequencies must be positive.")
   }
+  if (low_freq >= high_freq){
+    stop("It must be low_freq < high_freq")
+  }
   if (low_freq > 1){
     low_freq <- 2 / low_freq
   }
@@ -68,6 +71,9 @@ dftse <- function(x, low_freq, high_freq)
 corbae_ouliaris <- function(x, low_freq, high_freq){
   if (low_freq < 0 || high_freq < 0){
     stop("Frequencies must be positive.")
+  }
+  if (low_freq >= high_freq){
+    stop("It must be low_freq < high_freq")
   }
   if (low_freq > 1){
     low_freq <- 2 / low_freq
