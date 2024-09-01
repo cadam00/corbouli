@@ -9,7 +9,7 @@ dftse(x, low_freq, high_freq)
 }
 \arguments{
 \item{x}{
-Vector containing values for filtering
+Vector, \code{data.frame} or \code{matrix} containing values for filtering.
 }
 \item{low_freq}{
 Number indicating the lowest frequency of the period as radians of \eqn{\pi}. If
