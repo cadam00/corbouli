@@ -1,0 +1,3 @@
+importFrom("stats", "fft", "lm")
+export("dftse")
+export("corbae_ouliaris")
