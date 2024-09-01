@@ -1,8 +1,5 @@
 dftse <- function(x, low_freq, high_freq)
 {
-  if (!is.null(dim(x))){
-    stop("Currently implemented only for vectors.")
-  }
   if (low_freq < 0 || high_freq < 0){
     stop("Frequencies must be positive.")
   }
@@ -13,31 +10,62 @@ dftse <- function(x, low_freq, high_freq)
     high_freq <- 2 / high_freq
   }
 
-  nrs <- length(x)
-  datdf  <- fft(x) / length(x)
-  m  <- (nrs+(nrs%%2))/2
-  k <- 1 / m
-  if (k<low_freq|k>high_freq){
-    datdf[1] <- 0
-  }
-  k <- 2:m / m
-  remove_pos <- which((k<low_freq|k>high_freq)) + 1
-  remove_pos <- c(remove_pos, nrs - (remove_pos-2))
-  datdf[remove_pos] <- 0
+  if (is.null(dim(x))){
+    # Vector case
 
-  if (low_freq>0) {
-    datdf[1] <- 0
+    nrs <- length(x)
+    datdf  <- fft(x) / nrs
+    m  <- (nrs+(nrs%%2))/2
+    k <- 1 / m
+    if (k<low_freq|k>high_freq){
+      datdf[1] <- 0
+    }
+    k <- 2:m / m
+    remove_pos <- which((k<low_freq|k>high_freq)) + 1
+    remove_pos <- c(remove_pos, nrs - (remove_pos-2))
+    datdf[remove_pos] <- 0
+
+    if (low_freq>0) {
+      datdf[1] <- 0
+    }
+    if ((nrs%%2)==0 & high_freq<1) {
+      datdf[m+1] <- 0
+    }
+
+    return(Re(fft(datdf, inverse = TRUE)))
+
+  } else {
+    # Matrix case
+
+    nrs <- nrow(x)
+    if (!is.matrix(x)){
+      x <- as.matrix(x)
+    }
+    datdf  <- mvfft(x) / nrs
+    m  <- (nrs+(nrs%%2))/2
+    k <- 1 / m
+    if (k<low_freq|k>high_freq){
+      datdf[1,] <- 0
+    }
+    k <- 2:m / m
+    remove_pos <- which((k<low_freq|k>high_freq)) + 1
+    remove_pos <- c(remove_pos, nrs - (remove_pos-2))
+    datdf[remove_pos,] <- 0
+
+    if (low_freq>0) {
+      datdf[1,] <- 0
+    }
+    if ((nrs%%2)==0 & high_freq<1) {
+      datdf[m+1,] <- 0
+    }
+
+    return(Re(mvfft(datdf, inverse = TRUE)))
+
   }
-  if ((nrs%%2)==0 & high_freq<1) {
-    datdf[m+1] <- 0
-  }
-  return(Re(fft(datdf, inverse = TRUE)))
+
 }
 
 corbae_ouliaris <- function(x, low_freq, high_freq){
-  if (!is.null(dim(x))){
-    stop("Currently implemented only for vectors.")
-  }
   if (low_freq < 0 || high_freq < 0){
     stop("Frequencies must be positive.")
   }
@@ -47,10 +75,33 @@ corbae_ouliaris <- function(x, low_freq, high_freq){
   if (high_freq > 1){
     high_freq <- 2 / high_freq
   }
-  return(lm(y ~ x,
-            data.frame(
-              y = dftse(x, low_freq, high_freq),
-              x = dftse(seq(x)/length(x), low_freq, high_freq))
-         )$residuals
-  )
+  if (is.null(dim(x))){
+    nrs <- length(x)
+
+    return(lm(y ~ -1 + x,
+              data.frame(
+                y = dftse(x, low_freq, high_freq),
+                x = dftse(seq(nrs)/nrs, low_freq, high_freq)
+              )
+           )$residuals
+    )
+
+  } else {
+    nrs <- nrow(x)
+    cls <- ncol(x)
+    dftse_time <- dftse(seq(nrs)/nrs, low_freq, high_freq)
+    dftse_x    <- dftse(x, low_freq, high_freq)
+
+    var_dftse_time <- var(dftse_time)
+
+    res <- x * 1 # make a copy and make sure for it by multiply by one
+
+    for (i in seq(cls)){
+      res[,i] <- dftse_x[,i] -
+                 (cov(dftse_x[,i], dftse_time) / var_dftse_time) * dftse_time
+    }
+
+    return(res)
+
+  }
 }

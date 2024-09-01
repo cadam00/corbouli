@@ -46,5 +46,15 @@ University Press, pp. 167–177. \doi{10.1017/CBO9781139164863.008}
 # Apply on vector
 data(AirPassengers)
 dftse(c(AirPassengers), 0.1, 0.9)
-}
 
+data(AirPassengers)
+corbae_ouliaris(AirPassengers, low_freq = 0.1, high_freq = 0.9)
+
+# Apply on matrix per column
+mat <- matrix(AirPassengers, ncol = 12)
+dftse(mat, low_freq = 0.1, high_freq = 0.9)
+
+# Apply on data.frame per column
+dfmat <- as.data.frame(mat)
+dftse(dfmat, low_freq = 0.1, high_freq = 0.9)
+}

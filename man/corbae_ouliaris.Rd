@@ -50,10 +50,9 @@ corbae_ouliaris(AirPassengers, low_freq = 0.1, high_freq = 0.9)
 
 # Apply on matrix per column
 mat <- matrix(AirPassengers, ncol = 12)
-apply(mat, 2, function(x)corbae_ouliaris(x, low_freq = 0.1, high_freq = 0.9))
+corbae_ouliaris(mat, low_freq = 0.1, high_freq = 0.9)
 
 # Apply on data.frame per column
 dfmat <- as.data.frame(mat)
-apply(dfmat, 2, function(x)corbae_ouliaris(x, low_freq = 0.1, high_freq = 0.9))
+corbae_ouliaris(dfmat, low_freq = 0.1, high_freq = 0.9)
 }
-
