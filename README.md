@@ -3,7 +3,7 @@
   [![R-CMD-check](https://github.com/cadam00/CorbaeOuliaris/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/CorbaeOuliaris/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-Implementation of the [Corbae and Ouliaris (2006)](#ref-corbae2006) Frequency
+Implementation of the Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency
 Domain Filter.
 
 # **Install**
