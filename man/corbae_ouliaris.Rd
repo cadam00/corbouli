@@ -1,6 +1,6 @@
 \name{corbae_ouliaris}
 \alias{corbae_ouliaris}
-\title{Coherence metrics}
+\title{Corbae-Ouliaris}
 \description{
 Corbae-Ouliaris Frequency Domain Filter
 }
