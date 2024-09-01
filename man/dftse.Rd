@@ -11,20 +11,20 @@ dftse(x, low_freq, high_freq)
 \item{x}{
 Vector containing values for filtering
 }
-\item{s}{
+\item{low_freq}{
 Number indicating the lowest frequency of the period as radians of \eqn{\pi}. If
-\code{s > 1}, indicating that the direct frequency of the data is
-provided, this is transformed internally into \code{2 / s}.
+\code{low_freq > 1}, indicating that the direct frequency of the data is
+provided, this is transformed internally into \code{2 / low_freq}.
 }
-\item{e}{
+\item{high_freq}{
 Number indicating the lowest frequency of the period as radians of \eqn{\pi}. If
-\code{e > 1}, indicating that the direct frequency of the data is
-provided, this is transformed internally into \code{2 / e}.
+\code{high_freq > 1}, indicating that the direct frequency of the data is
+provided, this is transformed internally into \code{2 / high_freq}.
 }
 }
 \details{
 This is a pure R implementation of the DFT censoring. First DFT is applied on
-the data and this is filtered according to \code{s} and \code{e}
+the data and this is filtered according to \code{low_freq} and \code{high_freq}
 }
 
 \value{
