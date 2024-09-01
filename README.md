@@ -1,4 +1,5 @@
 <!-- badges: start -->
+  [![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://CRAN.R-project.org/package=CorbaeOuliaris)
   [![R-CMD-check](https://github.com/cadam00/CorbaeOuliaris/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/CorbaeOuliaris/actions/workflows/R-CMD-check.yaml)
   <!-- badges: end -->
 
