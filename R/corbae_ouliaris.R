@@ -94,8 +94,9 @@ corbae_ouliaris <- function(x, low_freq, high_freq){
 
     var_dftse_time <- var(dftse_time)
 
-    res <- x * 1 # make a copy and make sure for it by multiply by one
+    res <- x * 1 # make a copy and make sure for it by multiplying by one
 
+    # Manual regression without constant per column
     for (i in seq(cls)){
       res[,i] <- dftse_x[,i] -
                  (cov(dftse_x[,i], dftse_time) / var_dftse_time) * dftse_time
