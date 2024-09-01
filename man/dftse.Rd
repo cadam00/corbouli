@@ -1,11 +1,11 @@
 \name{dftse}
 \alias{dftse}
-\title{Coherence metrics}
+\title{DFT censoring}
 \description{
 DFT censoring
 }
 \usage{
-dftse(x, s, e)
+dftse(x, low_freq, high_freq)
 }
 \arguments{
 \item{x}{
