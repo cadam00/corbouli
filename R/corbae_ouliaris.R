@@ -1,5 +1,18 @@
-dftse <- function(x, low_freq, high_freq)
+dftse <- function(x, low_freq = NULL, high_freq = NULL)
 {
+  if (is.null(low_freq) || is.null(high_freq)){
+    if(is.ts(x)){
+      freq <- frequency(x)
+    } else {
+      freq <- 1
+    }
+  }
+  if (is.null(low_freq)){
+    low_freq <- ifelse(freq > 1, trunc(freq * 1.5), 2)
+  }
+  if (is.null(high_freq)){
+    high_freq <- trunc(freq * 8)
+  }
   if (low_freq < 0 || high_freq < 0){
     stop("Frequencies must be positive.")
   }
@@ -9,11 +22,10 @@ dftse <- function(x, low_freq, high_freq)
   if (low_freq >= high_freq){
     stop("It must be low_freq < high_freq.")
   }
-  if (low_freq > 1){
-    low_freq <- 2 / high_freq
-  }
-  if (high_freq > 1){
-    high_freq <- 2 / low_freq
+  if (low_freq > 1 && high_freq > 1){
+    temp      <- low_freq
+    low_freq  <- 2 / high_freq
+    high_freq <- 2 / temp
   }
 
   if (is.null(dim(x))){
@@ -71,7 +83,16 @@ dftse <- function(x, low_freq, high_freq)
 
 }
 
-corbae_ouliaris <- function(x, low_freq, high_freq){
+corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
+  if (is.null(low_freq) || is.null(high_freq)){
+    freq <- frequency(x)
+  }
+  if (is.null(low_freq)){
+    low_freq <- ifelse(freq > 1, trunc(freq * 1.5), 2)
+  }
+  if (is.null(high_freq)){
+    high_freq <- trunc(freq * 8)
+  }
   if (low_freq < 0 || high_freq < 0){
     stop("Frequencies must be positive.")
   }
@@ -81,22 +102,20 @@ corbae_ouliaris <- function(x, low_freq, high_freq){
   if (low_freq >= high_freq){
     stop("It must be low_freq < high_freq.")
   }
-  if (low_freq > 1){
-    low_freq <- 2 / low_freq
-  }
-  if (high_freq > 1){
-    high_freq <- 2 / high_freq
+  if (low_freq > 1 && high_freq > 1){
+    temp      <- low_freq
+    low_freq  <- 2 / high_freq
+    high_freq <- 2 / temp
   }
   if (is.null(dim(x))){
     nrs <- length(x)
 
-    return(lm(y ~ -1 + x,
-              data.frame(
-                y = dftse(x, low_freq, high_freq),
-                x = dftse(seq(nrs)/nrs, low_freq, high_freq)
-              )
-           )$residuals
-    )
+    dftse_time <- dftse(seq(nrs)/nrs, low_freq, high_freq)
+    dftse_x    <- dftse(x, low_freq, high_freq)
+
+    var_dftse_time <- var(dftse_time)
+
+    res <- dftse_x - (cov(dftse_x, dftse_time) / var_dftse_time) * dftse_time
 
   } else {
     nrs <- nrow(x)
@@ -112,8 +131,8 @@ corbae_ouliaris <- function(x, low_freq, high_freq){
       res[,i] <- dftse_x[,i] -
                  (cov(dftse_x[,i], dftse_time) / var_dftse_time) * dftse_time
     }
-
-    return(res)
-
   }
+
+  return(res)
+
 }
