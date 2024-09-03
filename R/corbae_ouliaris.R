@@ -22,7 +22,7 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
   if (low_freq >= high_freq){
     stop("It must be low_freq < high_freq.")
   }
-  if (low_freq > 1 && high_freq > 1){
+  if (low_freq >= 1 && high_freq > 1){
     temp      <- low_freq
     low_freq  <- 2 / high_freq
     high_freq <- 2 / temp
