@@ -24,7 +24,10 @@ provided, this is transformed internally into \code{2 / low_freq}.
 }
 \details{
 This is a pure R implementation of the DFT censoring. First DFT is applied on
-the data and this is filtered according to \code{low_freq} and \code{high_freq}
+the data and this is filtered according to \code{low_freq} and \code{high_freq}.
+\code{low_freq} and \code{high_freq} must be both either between 0 and 1,
+meaning that they are frequencies of the period as radians, or both >1,
+indicating that both are starting and ending periods of the cycle.
 }
 
 \value{

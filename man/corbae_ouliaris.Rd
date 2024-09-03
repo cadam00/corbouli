@@ -25,7 +25,9 @@ provided, this is transformed internally into \code{2 / low_freq}.
 \details{
 This is a pure R implementation of the filtering algorithm. \code{low_freq} and
 \code{high_freq} are connected with characteristics of the series, for example
-the business circle.
+the business circle. \code{low_freq} and \code{high_freq} must be both either
+between 0 and 1, meaning that they are frequencies of the period as radians, or
+both >1, indicating that both are starting and ending periods of the cycle.
 }
 
 \value{
