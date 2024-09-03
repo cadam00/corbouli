@@ -31,5 +31,5 @@ Analysis and Applied Research</em>. Cambridge: Cambridge University Press, pp.
 
 Pérez Pérez, J. (2011) <span class="nocase" id="ref-corbae2006">"COULIARI: Stata
 module to implement Corbae-Ouliaris frequency domain filter to time series data
-,"</span> Statistical Software Components S457218, <em>Boston College Department
-of Economics</em>. 
+,"</span> <em>Statistical Software Components</em>, S457218, Boston College
+Department of Economics. 
