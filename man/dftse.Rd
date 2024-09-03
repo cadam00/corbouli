@@ -14,12 +14,12 @@ Vector, \code{data.frame} or \code{matrix} containing values for filtering.
 \item{low_freq}{
 Number indicating the lowest frequency of the period as radians of \eqn{\pi}. If
 \code{low_freq > 1}, indicating that the direct frequency of the data is
-provided, this is transformed internally into \code{2 / low_freq}.
+provided, this is transformed internally into \code{2 / high_freq}.
 }
 \item{high_freq}{
 Number indicating the lowest frequency of the period as radians of \eqn{\pi}. If
 \code{high_freq > 1}, indicating that the direct frequency of the data is
-provided, this is transformed internally into \code{2 / high_freq}.
+provided, this is transformed internally into \code{2 / low_freq}.
 }
 }
 \details{

@@ -10,10 +10,10 @@ dftse <- function(x, low_freq, high_freq)
     stop("It must be low_freq < high_freq.")
   }
   if (low_freq > 1){
-    low_freq <- 2 / low_freq
+    low_freq <- 2 / high_freq
   }
   if (high_freq > 1){
-    high_freq <- 2 / high_freq
+    high_freq <- 2 / low_freq
   }
 
   if (is.null(dim(x))){
