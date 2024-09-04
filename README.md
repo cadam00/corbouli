@@ -127,8 +127,7 @@ plot(USgdp, main = "Quarterly US GDP in billions of chained 2017 dollars
 co <- corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 0.3333)
 
 # Plot cycles of filtered series
-plot(co, main = "Corbae-Ouliaris FD Filter cycles",
-     ylab = "Billions of chained 2017 dollars (Seasonally adjusted)")
+plot(co, main = "Corbae-Ouliaris FD Filter cycles")
 ```
 
 <p align="center">
@@ -136,6 +135,25 @@ plot(co, main = "Corbae-Ouliaris FD Filter cycles",
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure1"></span>Fig. 2: Corbae-Ouliaris FD Filter cycles.
+</p>
+
+```r
+# Plot real data with the ones after removing cycles
+USgdp_rmco <- USgdp - co
+
+# Plot cycles of filtered series
+plot(USgdp, main = "Quarterly US GDP in billions of chained 2017 dollars
+(Seasonally adjusted)", col = "black", lwd = 2, ylab = "", yaxt="n")
+lines(USgdp_rmco, col = adjustcolor("red", alpha.f = 0.7), lwd = 2)
+legend(x = "topleft", lwd = 2, text.font = 2,
+       col= adjustcolor(c("black","red"), alpha.f = 0.7),
+       legend=c("Original data", "Decycled data"))
+```
+<p align="center">
+    <img src="man/figures/figure3.png" alt="Fig3" width="50%"/>
+</p>
+<p class="caption" align="center">
+<span id="ref-Figure1"></span>Fig. 3: Corbae-Ouliaris FD Filter cycles.
 </p>
 
 As noted by Ouliaris [2009](#ref-ouliaris2009), for setting `high_freq = 1` the
@@ -148,7 +166,6 @@ og <- corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 1)
 
 # Plot Business cycle vs Output gap
 plot(co, main = "Business cycle vs Output gap",
-     ylab = "Billions of chained 2017 dollars (Seasonally adjusted)",
      col = adjustcolor("blue", alpha.f = 0.7), lwd = 2)
 lines(og, col = adjustcolor("orange", alpha.f = 0.7), lwd = 2)
 legend(x = "bottomleft", lwd = 2, text.font = 2,
@@ -157,10 +174,10 @@ legend(x = "bottomleft", lwd = 2, text.font = 2,
 ```
 
 <p align="center">
-    <img src="man/figures/figure3.png" alt="Fig3" width="50%"/>
+    <img src="man/figures/figure4.png" alt="Fig4" width="50%"/>
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure1"></span>Fig. 3: Business cycle vs Output gap.
+<span id="ref-Figure1"></span>Fig. 4: Business cycle vs Output gap.
 </p>
 
 # **References**
