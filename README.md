@@ -1,5 +1,5 @@
 <!-- badges: start -->
-  [![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://CRAN.R-project.org/package=corbouli)
+  [![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://github.com/cadam00/corbouli)
   [![R-CMD-check](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/corbouli?branch=main)
 <!-- badges: end -->
