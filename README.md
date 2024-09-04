@@ -25,16 +25,17 @@ As an example from Baxter and King ([1999]#ref-baxter1999), the recommended
 lower (1.5 years) and higher (8 years) frequency for filtering from various data
 frequencies can be expressed from the following Table [1](#ref-table1).
 
-# <p align="center">
+<p align="center">
   Sample Frequency | Lower | Higher
   :---: | :---: | :---:
   Month | 18 | 96
   Quarter | 6 | 32
   Annual | 1.5 | 8
-# </p>
-# <p align="center">
+</p>
+<p align="center">
   <span class="nocase" id="ref-table1"> Table 1: Periods per sample frequency.
-# </p>
+  </span>
+</p>
 
 The same table in fragments of $\pi$ can be transformed into the Table
 [2](#ref-table2) using the $lower\_frequency = 2 / higher\_period$ and
