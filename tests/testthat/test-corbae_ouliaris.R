@@ -1,11 +1,15 @@
 test_that("corbae_ouliaris works", {
   ## To create corbae_ouliaris test data run:
   # data(USgdp)
-  # corbae_ouliaris_USgdp <- corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 0.3333)
+  # corbae_ouliaris_USgdp <- corbae_ouliaris(USgdp,
+  #                                          low_freq = 0.0625,
+  #                                          high_freq = 0.3333)
   # save(corbae_ouliaris_USgdp,
   #      file="inst//testdata//corbae_ouliaris_USgdp.rda", version = 2)
   #
-  # corbae_ouliaris_USgdp_nullfreq <- corbae_ouliaris(USgdp, low_freq = NULL, high_freq = NULL)
+  # corbae_ouliaris_USgdp_nullfreq <- corbae_ouliaris(USgdp,
+  #                                                   low_freq = NULL,
+  #                                                   high_freq = NULL)
   # save(corbae_ouliaris_USgdp_nullfreq,
   #      file="inst//testdata//corbae_ouliaris_USgdp_nullfreq.rda", version = 2)
 
@@ -17,9 +21,11 @@ test_that("corbae_ouliaris works", {
                                        package = "corbouli")
   load(corbae_ouliaris_USgdp_path)
 
-  corbae_ouliaris_USgdp_nullfreq_path <- system.file("testdata",
-                                                     "corbae_ouliaris_USgdp_nullfreq.rda",
-                                                     package = "corbouli")
+  corbae_ouliaris_USgdp_nullfreq_path <- system.file(
+                                           "testdata",
+                                           "corbae_ouliaris_USgdp_nullfreq.rda",
+                                            package = "corbouli"
+                                         )
   load(corbae_ouliaris_USgdp_nullfreq_path)
 
   expect_equal(
