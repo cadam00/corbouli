@@ -22,6 +22,9 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
   if (low_freq >= high_freq){
     stop("It must be low_freq < high_freq.")
   }
+  if (high_freq > 1 && low_freq < 2){
+    stop("If high_freq is period, then it should be low_freq >= 2")
+  }
   if (low_freq >= 1 && high_freq > 1){
     temp      <- low_freq
     low_freq  <- 2 / high_freq
@@ -101,6 +104,9 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
   }
   if (low_freq >= high_freq){
     stop("It must be low_freq < high_freq.")
+  }
+  if (high_freq > 1 && low_freq < 2){
+    stop("If high_freq is period, then it should be low_freq >= 2")
   }
   if (low_freq > 1 && high_freq > 1){
     temp      <- trunc(low_freq)
