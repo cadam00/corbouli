@@ -59,10 +59,10 @@ align="center">
 
 
 The same table in fragments of $\pi$ can be transformed into the Table
-[2](#ref-table2) using the $lower\_frequency = 2 / higher\_period$ and
-$higher\_frequency = 2 / lower\_period$. For instance, for quarterly sampled
-time series, we have $lower\_frequency = 2 / 32 = 0.0625$ and
-$higher\_frequency = 2 / 6 = 0.3333$.
+[2](#ref-table2) using the $lower\ frequency = 2 / higher\ period$ and
+$higher\ frequency = 2 / lower\ period$. For instance, for quarterly sampled
+time series, we have $lower\ frequency = 2 / 32 = 0.0625$ and
+$higher\ frequency = 2 / 6 = 0.3333$.
 
 <table style="width: 368px; height: 119px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
