@@ -22,10 +22,10 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
   if (low_freq >= high_freq){
     stop("It must be low_freq < high_freq.")
   }
-  if (high_freq > 1 && low_freq < 2){
+  if (high_freq > 2 && low_freq < 2){
     stop("If high_freq is period, then it should be low_freq >= 2")
   }
-  if (low_freq >= 1 && high_freq > 1){
+  if (low_freq >= 1 && high_freq >= 2){
     temp      <- low_freq
     low_freq  <- 2 / high_freq
     high_freq <- 2 / temp
@@ -61,6 +61,7 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
     nrs <- nrow(x)
     if (!is.matrix(x)){
       x <- as.matrix(x)
+      dimnames(x) <- NULL
     }
     datdf  <- mvfft(x) / nrs
     m  <- (nrs+(nrs%%2))/2
@@ -108,7 +109,7 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
   if (high_freq > 1 && low_freq < 2){
     stop("If high_freq is period, then it should be low_freq >= 2")
   }
-  if (low_freq > 1 && high_freq > 1){
+  if (low_freq >= 1 && high_freq >= 2){
     temp      <- trunc(low_freq)
     low_freq  <- 2 / trunc(high_freq)
     high_freq <- 2 / temp

@@ -1,5 +1,5 @@
 ---
-title: "Introduction to CorbaeOuliaris"
+title: "Introduction to corbouli"
 author: "Christos Adam"
 output:
   rmarkdown::html_vignette:
@@ -13,7 +13,7 @@ link-citations: true
 header-includes: \usepackage{float}
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{Introduction to CorbaeOuliaris}
+  %\VignetteIndexEntry{Introduction to corbouli}
   %\VignetteEncoding{UTF-8}
 ---
 
@@ -112,7 +112,7 @@ For this example, the quarterly US GDP in billions of chained 2017 dollars
 
 ``` r
 # Import package to workspace
-library(CorbaeOuliaris)
+library(corbouli)
 
 # Import "USgdp" dataset
 data(USgdp)

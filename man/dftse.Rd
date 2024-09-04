@@ -2,7 +2,7 @@
 \alias{dftse}
 \title{DFT censoring}
 \description{
-DFT censoring
+Discrete Fourier Transform censoring
 }
 \usage{
 dftse(x, low_freq = NULL, high_freq = NULL)
@@ -34,7 +34,8 @@ indicating that both are starting and ending periods of the cycle.
 }
 
 \value{
-Filtered object with length/dimensions same with the input x.
+Filtered object with length/dimensions same with the input x. Note that for
+inputs with dimensions a matrix will be returned.
 }
 
 \references{
@@ -49,7 +50,7 @@ University Press, pp. 167–177. \doi{10.1017/CBO9781139164863.008}
 }
 
 \seealso{
-\code{\link[CorbaeOuliaris]{corbae_ouliaris}}
+\code{\link[corbouli]{corbae_ouliaris}}
 }
 
 \examples{

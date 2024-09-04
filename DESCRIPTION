@@ -1,4 +1,4 @@
-Package: CorbaeOuliaris
+Package: corbouli
 Type: Package
 Title: Corbae-Ouliaris Frequency Domain Filtering
 Version: 0.1.0
@@ -12,10 +12,13 @@ Description: Corbae-Ouliaris frequency domain filtering. According to
              stationary and non-stationary time series.
 License: GPL-3
 Encoding: UTF-8
-URL: https://github.com/cadam00/CorbaeOuliaris
-BugReports: https://github.com/cadam00/CorbaeOuliaris/issues
+URL: https://github.com/cadam00/corbouli
+BugReports: https://github.com/cadam00/corbouli/issues
 LazyData: true
+Imports: stats
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr, rmarkdown
+Config/testthat/edition: 3

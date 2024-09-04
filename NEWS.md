@@ -1,4 +1,4 @@
-# CorbaeOuliaris 0.1.0
+# corbouli 0.1.0
 
 ## Major changes
 

@@ -46,7 +46,7 @@ University Press, pp. 167–177. \doi{10.1017/CBO9781139164863.008}
 }
 
 \seealso{
-\code{\link[CorbaeOuliaris]{dftse}}
+\code{\link[corbouli]{dftse}}
 }
 
 \examples{

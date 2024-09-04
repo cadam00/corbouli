@@ -1,6 +1,7 @@
 <!-- badges: start -->
-  [![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://CRAN.R-project.org/package=CorbaeOuliaris)
-  [![R-CMD-check](https://github.com/cadam00/CorbaeOuliaris/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/CorbaeOuliaris/actions/workflows/R-CMD-check.yaml)
+  [![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://CRAN.R-project.org/package=corbouli)
+  [![R-CMD-check](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/corbouli?branch=main)
 <!-- badges: end -->
 
 Implementation of the Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency
@@ -11,7 +12,7 @@ Domain Filter.
 Development version of the package can be installed via
 ``` r
 if (!require(remotes)) install.packages("remotes")
-remotes::install_github("cadam00/CorbaeOuliaris")
+remotes::install_github("cadam00/corbouli")
 ```
 
 # **Corbae-Ouliaris Frequency Domain Filtering**
@@ -105,7 +106,7 @@ For this example, the quarterly US GDP in billions of chained 2017 dollars
 
 ``` r
 # Import package to workspace
-library(CorbaeOuliaris)
+library(corbouli)
 
 # Import "USgdp" dataset
 data(USgdp)
