@@ -31,7 +31,8 @@ frequencies can be expressed from the following Table [1](#ref-table1).
   | Month | 18 | 96 |
   | Quarter | 6 | 32 |
   | Annual | 1.5 | 8 |
-  
+</p>
+<p align="center">
   <span class="nocase" id="ref-table1"> Table 1: Periods per sample frequency.
 </p>
 
@@ -47,7 +48,8 @@ $higher\_frequency = 2 / 6 = 0.3333$.
    Month | 0.0208 | 0.1111 
    Quarter | 0.0625 | 0.3333 
    Annual | 0.25 | 1 
-  
+</p>
+<p align="center">
   <span class="nocase" id="ref-table2"> Table 2: Periods per sample frequency.
 </p>
 
