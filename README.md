@@ -86,7 +86,7 @@ align="center">
 <tr style="height: 26px;">
 <td style="width: 136.65px; height: 26px;">&nbsp;Year</td>
 <td style="width: 108.7px; height: 26px;">0.25</td>
-<td style="width: 121.65px; height: 26px;">1</td>
+<td style="width: 121.65px; height: 26px;align:center">1</td>
 </tr>
 </tbody>
 </table>
