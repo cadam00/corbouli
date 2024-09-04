@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(CorbaeOuliaris)
+library(corbouli)
 
-test_check("CorbaeOuliaris")
+test_check("corbouli")
