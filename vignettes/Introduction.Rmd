@@ -188,7 +188,6 @@ Analysis and Applied Research</em>. Cambridge: Cambridge University Press, pp.
 
 Ouliaris, S. (2009) <span class="nocase" id="ref-ouliaris2009">Ideal Band Pass
 Filter For Stationary/Non-Stationary Series.</span>
-http://forums.eviews.com/viewtopic.php?f=15&t=1513.
 
 Pérez Pérez, J. (2011) <span class="nocase" id="ref-perez2011">COULIARI: Stata
 module to implement Corbae-Ouliaris frequency domain filter to time series

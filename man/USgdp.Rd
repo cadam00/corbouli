@@ -23,9 +23,6 @@ A \code{ts} object.
 
 \source{
 Bureau of Economic Analysis.
-\href{https://www.bea.gov/gdp/gross-domestic-product}{
-https://www.bea.gov/gdp/gross-domestic-product}.
-Accessed 2024-09-04.
 }
 
 \references{
