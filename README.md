@@ -69,24 +69,24 @@ text-align: center; margin-left: auto; margin-right: auto;" border="1"
 align="center">
 <tbody>
 <tr style="height: 26.75px;">
-<td style="width: 100%; height: 26.75px;">&nbsp;Sample Frequency</td>
+<td style="width: 100%; height: 26.75px;" align="center">&nbsp;Sample Frequency</td>
 <td style="width: 100%; height: 26.75px;">&nbsp;Lower</td>
-<td style="width: 100%; height: 26.75px;">&nbsp;Higher</td>
+<td style="width: 100%; height: 26.75px;">Higher</td>
 </tr>
 <tr style="height: 26px;">
 <td style="width: 100%; height: 26px;">&nbsp;Month</td>
-<td style="width: 100%; height: 26px;">&nbsp;0.0208</td>
-<td style="width: 100%; height: 26px;">&nbsp;0.1111</td>
+<td style="width: 100%; height: 26px;">0.0208</td>
+<td style="width: 100%; height: 26px;">0.1111</td>
 </tr>
 <tr style="height: 26px;">
 <td style="width: 100%; height: 26px;">&nbsp;Quarter</td>
-<td style="width: 100%; height: 26px;">&nbsp;0.0625</td>
-<td style="width: 100%; height: 26px;">&nbsp;0.3333 </td>
+<td style="width: 100%; height: 26px;">0.0625</td>
+<td style="width: 100%; height: 26px;">0.3333 </td>
 </tr>
 <tr style="height: 26px;">
 <td style="width: 100%; height: 26px;">&nbsp;Year</td>
-<td style="width: 100%; height: 26px;">&nbsp;0.25</td>
-<td style="width: 100%; height: 26px;">&nbsp;1</td>
+<td style="width: 100%; height: 26px;">0.25</td>
+<td style="width: 100%; height: 26px;">1</td>
 </tr>
 </tbody>
 </table>
