@@ -42,11 +42,11 @@ time series, we have $lower\_frequency = 2 / 32 = 0.0625$ and
 $higher\_frequency = 2 / 6 = 0.3333$.
 
 <p align="center">
-  | Sample Frequency | Lower | Higher |
-  | :---: | :---: | :---: |
-  | Month | 0.0208 | 0.1111 |
-  | Quarter | 0.0625 | 0.3333 |
-  | Annual | 0.25 | 1 |
+   Sample Frequency | Lower | Higher 
+   :---: | :---: | :---: 
+   Month | 0.0208 | 0.1111 
+   Quarter | 0.0625 | 0.3333 
+   Annual | 0.25 | 1 
   
   <span class="nocase" id="ref-table2"> Periods per sample frequency.
 </p>
