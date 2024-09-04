@@ -18,14 +18,13 @@ remotes::install_github("cadam00/corbouli")
 # **Corbae-Ouliaris Frequency Domain Filtering**
 
 Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency
-Domain Filter is used for extracting cycles from either both on stationary
-$I(0)$ and non-stationary $I(1)$ time series. This is one approximation of the
-ideal band pass filter of the series.
+Domain Filter is used for extracting cycles from either both on stationary and
+non-stationary time series. This is one approximation of the ideal band pass
+filter of the series.
 
 As an example from Baxter and King ([1999](#ref-baxter1999)), the recommended
 lower (1.5 years) and higher (8 years) frequency for filtering from various data
 frequencies can be expressed from the following Table [1](#ref-table1).
-
 
 <table style="width: 368px; height: 119px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
