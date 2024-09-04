@@ -32,7 +32,7 @@ frequencies can be expressed from the following Table [1](#ref-table1).
   | Quarter | 6 | 32 |
   | Annual | 1.5 | 8 |
   
-  <span class="nocase" id="ref-table1"> Periods per sample frequency.
+  <span class="nocase" id="ref-table1"> Table 1: Periods per sample frequency.
 </p>
 
 The same table in fragments of $\pi$ can be transformed into the Table
@@ -48,7 +48,7 @@ $higher\_frequency = 2 / 6 = 0.3333$.
    Quarter | 0.0625 | 0.3333 
    Annual | 0.25 | 1 
   
-  <span class="nocase" id="ref-table2"> Periods per sample frequency.
+  <span class="nocase" id="ref-table2"> Table 2: Periods per sample frequency.
 </p>
 
 The longer the series, the more the long run frequency can be expressed by using
@@ -155,4 +155,3 @@ Pérez Pérez, J. (2011) <span class="nocase" id="ref-perez2011">"COULIARI: Stat
 module to implement Corbae-Ouliaris frequency domain filter to time series data
 ",</span> <em>Statistical Software Components</em>, S457218, Boston College
 Department of Economics. 
->>>>>>> 4d90bed4e605c94636077ffe11c75e3f24d4467c
