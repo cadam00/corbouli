@@ -21,8 +21,8 @@ Domain Filter is used for extracting cycles from either both on stationary
 $I(0)$ and non-stationary $I(1)$ time series. This is one approximation of the
 ideal band pass filter of the series.
 
-As an example from Baxter and King (#ref-baxter1999), the recommended lower
-(1.5 years) and higher (8 years) frequency for filtering from various data
+As an example from Baxter and King ([1999]#ref-baxter1999), the recommended
+lower (1.5 years) and higher (8 years) frequency for filtering from various data
 frequencies can be expressed from the following Table [1](#ref-table1).
 
 <p align="center">
