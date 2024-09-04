@@ -145,7 +145,7 @@ Pérez Pérez, J. (2011) <span class="nocase" id="ref-perez2011">COULIARI: Stata
 module to implement Corbae-Ouliaris frequency domain filter to time series
 data.</span> <em>Statistical Software Components</em>, S457218, Boston College
 Department of Economics.
-=======
+
 ‘Extracting Cycles from Nonstationary Data’,</span> in D. Corbae, S.N. Durlauf,
 and B.E. Hansen (eds.) <em>Econometric Theory and Practice: Frontiers of
 Analysis and Applied Research</em>. Cambridge: Cambridge University Press, pp.
