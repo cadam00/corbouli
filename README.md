@@ -35,20 +35,20 @@ align="center">
 <td style="width: 100%; height: 26.75px;">&nbsp;Lower</td>
 <td style="width: 100%; height: 26.75px;">Higher</td>
 </tr>
-<tr style="height: 26px;">
-<td style="width: 100%; height: 26px;">&nbsp;Month</td>
-<td style="width: 100%; height: 26px;">18</td>
-<td style="width: 100%; height: 26px;">96</td>
+<tr style=" align="center">
+<td style="width: 100%;  align="center">&nbsp;Month</td>
+<td style="width: 100%;  align="center">18</td>
+<td style="width: 100%;  align="center">96</td>
 </tr>
-<tr style="height: 26px;">
-<td style="width: 100%; height: 26px;">&nbsp;Quarter</td>
-<td style="width: 100%; height: 26px;">6</td>
-<td style="width: 100%; height: 26px;">32</td>
+<tr style=" align="center">
+<td style="width: 100%;  align="center">&nbsp;Quarter</td>
+<td style="width: 100%;  align="center">6</td>
+<td style="width: 100%;  align="center">32</td>
 </tr>
-<tr style="height: 26px;">
-<td style="width: 100%; height: 26px;">&nbsp;Year</td>
-<td style="width: 100%; height: 26px;">1.5</td>
-<td style="width: 100%; height: 26px;">8</td>
+<tr style=" align="center">
+<td style="width: 100%;  align="center">&nbsp;Year</td>
+<td style="width: 100%;  align="center">1.5</td>
+<td style="width: 100%;  align="center">8</td>
 </tr>
 </tbody>
 </table>
@@ -73,19 +73,19 @@ align="center">
 <td style="width: 100%; height: 26.75px;">&nbsp;Lower</td>
 <td style="width: 100%; height: 26.75px;">Higher</td>
 </tr>
-<tr style="height: 26px;">
-<td style="width: 100%; height: 26px;">&nbsp;Month</td>
-<td style="width: 100%; height: 26px;">0.0208</td>
-<td style="width: 100%; height: 26px;">0.1111</td>
+<tr style=" align="center">
+<td style="width: 100%;  align="center">&nbsp;Month</td>
+<td style="width: 100%;  align="center">0.0208</td>
+<td style="width: 100%;  align="center">0.1111</td>
 </tr>
-<tr style="height: 26px;">
-<td style="width: 100%; height: 26px;">&nbsp;Quarter</td>
-<td style="width: 100%; height: 26px;">0.0625</td>
-<td style="width: 100%; height: 26px;">0.3333 </td>
+<tr style=" align="center">
+<td style="width: 100%;  align="center">&nbsp;Quarter</td>
+<td style="width: 100%;  align="center">0.0625</td>
+<td style="width: 100%;  align="center">0.3333 </td>
 </tr>
-<tr style="height: 26px;">
-<td style="width: 100%; height: 26px;">&nbsp;Year</td>
-<td style="width: 100%; height: 26px;">0.25</td>
+<tr style=" align="center">
+<td style="width: 100%;  align="center">&nbsp;Year</td>
+<td style="width: 100%;  align="center">0.25</td>
 <td style="width: 100%; height: 26px;" align="center">1</td>
 </tr>
 </tbody>
