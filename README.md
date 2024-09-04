@@ -26,7 +26,7 @@ lower (1.5 years) and higher (8 years) frequency for filtering from various data
 frequencies can be expressed from the following Table [1](#ref-table1).
 
 
-<table style="width: 368px; height: 119px; vertical-align: middle;
+<table style="width: 100%; height: 119px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
 align="center">
 <tbody>
@@ -64,13 +64,32 @@ $higher\_frequency = 2 / lower\_period$. For instance, for quarterly sampled
 time series, we have $lower\_frequency = 2 / 32 = 0.0625$ and
 $higher\_frequency = 2 / 6 = 0.3333$.
 
-<p align="center">
-   Sample Frequency | Lower | Higher 
-   :---: | :---: | :---: 
-   Month | 0.0208 | 0.1111 
-   Quarter | 0.0625 | 0.3333 
-   Annual | 0.25 | 1 
-</p>
+<table style="width: 100%; height: 119px; vertical-align: middle;
+text-align: center; margin-left: auto; margin-right: auto;" border="1"
+align="center">
+<tbody>
+<tr style="height: 26.75px;">
+<td style="width: 136.65px; height: 26.75px;">&nbsp;Sample Frequency</td>
+<td style="width: 108.7px; height: 26.75px;">&nbsp;Lower</td>
+<td style="width: 121.65px; height: 26.75px;">Higher</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 136.65px; height: 26px;">&nbsp;Month</td>
+<td style="width: 108.7px; height: 26px;">0.0208</td>
+<td style="width: 121.65px; height: 26px;">0.1111</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 136.65px; height: 26px;">&nbsp;Quarter</td>
+<td style="width: 108.7px; height: 26px;">0.0625</td>
+<td style="width: 121.65px; height: 26px;">0.3333 </td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 136.65px; height: 26px;">&nbsp;Year</td>
+<td style="width: 108.7px; height: 26px;">0.25</td>
+<td style="width: 121.65px; height: 26px;">1</td>
+</tr>
+</tbody>
+</table>
 <p align="center">
   <span class="nocase" id="ref-table2"> Table 2: Periods per sample frequency.
 </p>
