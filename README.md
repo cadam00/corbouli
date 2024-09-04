@@ -131,7 +131,6 @@ Corbae, D., Ouliaris, S., and Phillips, P. (2002).
 Trending-Data, <em>Econometrica</em> <b>70</b>(3), pp. 1067-1109.
 
 Corbae, D. and Ouliaris, S. (2006)<span class="nocase" id="ref-corbae2006">
-
 Extracting Cycles from Nonstationary Data,</span>in Corbae D., Durlauf S.N.,
 and Hansen B.E. (eds.) <em>Econometric Theory and Practice: Frontiers of
 Analysis and Applied Research</em>. Cambridge: Cambridge University Press, pp.
