@@ -60,7 +60,7 @@ align="center">
 </tbody>
 </table>
 <p align="center">
-  <span class="nocase" id="ref-table1"> Table 1: Periods per sample frequency.
+  <span class="nocase" id="ref-table1"> Table 1: Low and high frequency in periods.
   </span>
 </p>
 
@@ -98,7 +98,7 @@ align="center">
 </tbody>
 </table>
 <p align="center">
-  <span class="nocase" id="ref-table2"> Table 2: Periods per sample frequency.
+  <span class="nocase" id="ref-table2"> Table 2: Low and high frequency in fragments of $\pi$.
 </p>
 
 The longer the series, the more the long run frequency can be expressed by using
