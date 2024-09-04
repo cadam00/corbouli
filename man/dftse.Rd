@@ -31,7 +31,7 @@ indicating that both are starting and ending periods of the cycle.
 }
 
 \value{
-Filtered vector with the same length as the input.
+Filtered object with length/dimensions same with the input x.
 }
 
 \references{

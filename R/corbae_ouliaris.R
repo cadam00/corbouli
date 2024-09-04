@@ -88,10 +88,10 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
     freq <- frequency(x)
   }
   if (is.null(low_freq)){
-    low_freq <- ifelse(freq > 1, trunc(freq * 1.5), 2)
+    low_freq <- ifelse(freq > 1, freq * 1.5, 2)
   }
   if (is.null(high_freq)){
-    high_freq <- trunc(freq * 8)
+    high_freq <- freq * 8
   }
   if (low_freq < 0 || high_freq < 0){
     stop("Frequencies must be positive.")
@@ -103,8 +103,8 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
     stop("It must be low_freq < high_freq.")
   }
   if (low_freq > 1 && high_freq > 1){
-    temp      <- low_freq
-    low_freq  <- 2 / high_freq
+    temp      <- trunc(low_freq)
+    low_freq  <- 2 / trunc(high_freq)
     high_freq <- 2 / temp
   }
   if (is.null(dim(x))){
