@@ -9,17 +9,17 @@ test_that("corbae_ouliaris works", {
   # save(corbae_ouliaris_USgdp_nullfreq,
   #      file="inst//testdata//corbae_ouliaris_USgdp_nullfreq.rda", version = 2)
 
-  library(CorbaeOuliaris)
+  library(corbouli)
 
   data(USgdp)
   corbae_ouliaris_USgdp_path <- system.file("testdata",
                                        "corbae_ouliaris_USgdp.rda",
-                                       package = "CorbaeOuliaris")
+                                       package = "corbouli")
   load(corbae_ouliaris_USgdp_path)
 
   corbae_ouliaris_USgdp_nullfreq_path <- system.file("testdata",
                                                      "corbae_ouliaris_USgdp_nullfreq.rda",
-                                                     package = "CorbaeOuliaris")
+                                                     package = "corbouli")
   load(corbae_ouliaris_USgdp_nullfreq_path)
 
   expect_equal(
@@ -74,17 +74,17 @@ test_that("dftse works", {
   # save(dftse_nullfreq,
   #      file="inst//testdata//dftse_USgdp_nullfreq.rda", version = 2)
 
-  library(CorbaeOuliaris)
+  library(corbouli)
 
   data(USgdp)
   dftse_USgdp_path <- system.file("testdata",
                                   "dftse_USgdp.rda",
-                                   package = "CorbaeOuliaris")
+                                   package = "corbouli")
   load(dftse_USgdp_path)
 
   dftse_USgdp_nullfreq_path <- system.file("testdata",
                                            "dftse_USgdp_nullfreq.rda",
-                                           package = "CorbaeOuliaris")
+                                           package = "corbouli")
   load(dftse_USgdp_nullfreq_path)
 
   expect_equal(
