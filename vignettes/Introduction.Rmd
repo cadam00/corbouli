@@ -101,9 +101,10 @@ align="center">
   <span class="nocase" id="ref-table2"> Table 2: Low and high frequency in fragments of $\pi$.
 </p>
 
-The longer the series, the more the long run frequency can be expressed by using
-lower frequency equal to 0. Moreover, the output gap can be expressed using
-high-frequency equal to 1 ([Ouliaris, 2009](#ref-ouliaris2009)).
+The longer the series, the more the long run frequency is expressed by a
+lower frequency as fragment of $\pi$ equal to 0. Moreover, the output gap can be
+expressed using higher frequency as fragment of $\pi$ equal equal to 1
+([Ouliaris, 2009](#ref-ouliaris2009)).
 
 # **Example**
 
