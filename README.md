@@ -26,29 +26,29 @@ lower (1.5 years) and higher (8 years) frequency for filtering from various data
 frequencies can be expressed from the following Table [1](#ref-table1).
 
 
-<table style="width: 100%; height: 119px; vertical-align: middle;
+<table style="width: 368px; height: 119px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
 align="center">
 <tbody>
 <tr style="height: 26.75px;">
-<td style="width: 100%; height: 26.75px;">&nbsp;Sample Frequency</td>
-<td style="width: 100%; height: 26.75px;">&nbsp;Lower</td>
-<td style="width: 100%; height: 26.75px;">Higher</td>
+<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Sample Frequency</b></td>
+<td style="width: 136.65px; height: 26px;" align="center"><b>Lower</b></td>
+<td style="width: 136.65px; height: 26px;" align="center"><b>Higher</b></td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 100%; height: 26px;" align="center">&nbsp;Month</td>
-<td style="width: 100%; height: 26px;" align="center">18</td>
-<td style="width: 100%; height: 26px;" align="center">96</td>
+<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Month</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">18</td>
+<td style="width: 136.65px; height: 26px;" align="center">96</td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 100%; height: 26px;" align="center">&nbsp;Quarter</td>
-<td style="width: 100%; height: 26px;" align="center">6</td>
-<td style="width: 100%; height: 26px;" align="center">32</td>
+<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Quarter</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">6</td>
+<td style="width: 136.65px; height: 26px;" align="center">32</td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 100%; height: 26px;" align="center">&nbsp;Year</td>
-<td style="width: 100%; height: 26px;" align="center">1.5</td>
-<td style="width: 100%; height: 26px;" align="center">8</td>
+<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Year</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">1.5</td>
+<td style="width: 136.65px; height: 26px;" align="center">8</td>
 </tr>
 </tbody>
 </table>
@@ -64,29 +64,29 @@ $higher\_frequency = 2 / lower\_period$. For instance, for quarterly sampled
 time series, we have $lower\_frequency = 2 / 32 = 0.0625$ and
 $higher\_frequency = 2 / 6 = 0.3333$.
 
-<table style="width: 100%; height: 119px; vertical-align: middle;
+<table style="width: 368px; height: 119px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
 align="center">
 <tbody>
 <tr style="height: 26.75px;">
-<td style="width: 100%; height: 26.75px;" align="center">&nbsp;Sample Frequency</td>
-<td style="width: 100%; height: 26.75px;">&nbsp;Lower</td>
-<td style="width: 100%; height: 26.75px;">Higher</td>
+<td style="width: 136.65px; height: 26.75px;" align="center">&nbsp;<b>Sample Frequency</b></td>
+<td style="width: 136.65px; height: 26.75px;">&nbsp;Lower</td>
+<td style="width: 136.65px; height: 26.75px;">Higher</td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 100%; height: 26px;" align="center">&nbsp;Month</td>
-<td style="width: 100%; height: 26px;" align="center">0.0208</td>
-<td style="width: 100%; height: 26px;" align="center">0.1111</td>
+<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Month</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">0.0208</td>
+<td style="width: 136.65px; height: 26px;" align="center">0.1111</td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 100%; height: 26px;" align="center">&nbsp;Quarter</td>
-<td style="width: 100%; height: 26px;" align="center">0.0625</td>
-<td style="width: 100%; height: 26px;" align="center">0.3333 </td>
+<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Quarter</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">0.0625</td>
+<td style="width: 136.65px; height: 26px;" align="center">0.3333 </td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 100%; height: 26px;" align="center">&nbsp;Year</td>
-<td style="width: 100%; height: 26px;" align="center">0.25</td>
-<td style="width: 100%; height: 26px;" align="center">1</td>
+<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Year</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">0.25</td>
+<td style="width: 136.65px; height: 26px;" align="center">1</td>
 </tr>
 </tbody>
 </table>
