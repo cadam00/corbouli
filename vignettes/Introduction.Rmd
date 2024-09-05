@@ -145,9 +145,10 @@ plot(co, main = "Corbae-Ouliaris FD Filter cycles")
 
 ```r
 # Plot real data with the ones after removing cycles
+# Removing cycles from original data
 USgdp_rmco <- USgdp - co
 
-# Plot cycles of filtered series
+# Plot Original vs Decycled data
 plot(USgdp, main = "Quarterly US GDP in billions of chained 2017 dollars
 (Seasonally adjusted)", col = "black", lwd = 2, ylab = "", yaxt="n")
 lines(USgdp_rmco, col = adjustcolor("red", alpha.f = 0.7), lwd = 2)
