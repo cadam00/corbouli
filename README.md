@@ -137,7 +137,7 @@ plot(co,
     <img src="man/figures/figure2.png" alt="Fig2" width="50%"/>
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure1"></span>Fig. 2: Corbae-Ouliaris FD Filter cycles.
+<span id="ref-Figure2"></span>Fig. 2: Corbae-Ouliaris FD Filter cycles.
 </p>
 
 ```r
@@ -157,12 +157,12 @@ legend(x = "topleft", lwd = 2, text.font = 2,
     <img src="man/figures/figure3.png" alt="Fig3" width="50%"/>
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure1"></span>Fig. 3: Corbae-Ouliaris FD Filter cycles.
+<span id="ref-Figure3"></span>Fig. 3: Corbae-Ouliaris FD Filter cycles.
 </p>
 
 As noted by Ouliaris [2009](#ref-ouliaris2009), for setting `high_freq = 1` the
-output gap series than business cycle one will have higher volatility (Figure
-).
+output gap series than business cycle one will have higher volatility (Fig.
+[4](#ref-Figure4)).
 
 ```r
 # Extract output gap
@@ -181,7 +181,7 @@ legend(x = "bottomleft", lwd = 2, text.font = 2,
     <img src="man/figures/figure4.png" alt="Fig4" width="50%"/>
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure1"></span>Fig. 4: Business cycle vs Output gap.
+<span id="ref-Figure4"></span>Fig. 4: Business cycle vs Output gap.
 </p>
 
 # **References**
