@@ -157,7 +157,7 @@ legend(x = "topleft", lwd = 2, text.font = 2,
     <img src="man/figures/figure3.png" alt="Fig3" width="50%"/>
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure3"></span>Fig. 3: Corbae-Ouliaris FD Filter cycles.
+<span id="ref-Figure3"></span>Fig. 3: Original vs Decycled USgdp data.
 </p>
 
 As noted by Ouliaris [2009](#ref-ouliaris2009), for setting `high_freq = 1` the
