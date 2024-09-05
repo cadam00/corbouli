@@ -118,7 +118,7 @@ library(corbouli)
 data(USgdp)
 
 plot(USgdp, main = "Quarterly US GDP in billions of chained 2017 dollars
-(Seasonally adjusted)", ylab = "", yaxt="n")
+(Seasonally adjusted)", ylab = "", lwd  = 2)
 ```
 
 <p align="center">
@@ -133,7 +133,10 @@ plot(USgdp, main = "Quarterly US GDP in billions of chained 2017 dollars
 co <- corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 0.3333)
 
 # Plot cycles of filtered series
-plot(co, main = "Corbae-Ouliaris FD Filter cycles")
+plot(co,
+     main = "Corbae-Ouliaris FD Filter cycles for USgdp",
+     ylab = "",
+     lwd  = 2)
 ```
 
 <p align="center">
@@ -150,7 +153,7 @@ USgdp_rmco <- USgdp - co
 
 # Plot Original vs Decycled data
 plot(USgdp, main = "Quarterly US GDP in billions of chained 2017 dollars
-(Seasonally adjusted)", col = "black", lwd = 2, ylab = "", yaxt="n")
+(Seasonally adjusted)", col = "black", lwd = 2, ylab = "")
 lines(USgdp_rmco, col = adjustcolor("red", alpha.f = 0.7), lwd = 2)
 legend(x = "topleft", lwd = 2, text.font = 2,
        col= adjustcolor(c("black","red"), alpha.f = 0.7),
@@ -172,7 +175,7 @@ output gap series than business cycle one will have higher volatility (Figure
 og <- corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 1)
 
 # Plot Business cycle vs Output gap
-plot(co, main = "Business cycle vs Output gap",
+plot(co, main = "Business cycle vs Output gap for USgdp",
      col = adjustcolor("blue", alpha.f = 0.7), lwd = 2)
 lines(og, col = adjustcolor("orange", alpha.f = 0.7), lwd = 2)
 legend(x = "bottomleft", lwd = 2, text.font = 2,
