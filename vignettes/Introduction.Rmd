@@ -176,7 +176,7 @@ og <- corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 1)
 
 # Plot Business cycle vs Output gap
 plot(co, main = "Business cycle vs Output gap for USgdp",
-     col = adjustcolor("blue", alpha.f = 0.7), lwd = 2)
+     col = adjustcolor("blue", alpha.f = 0.7), lwd = 2, ylab = "")
 lines(og, col = adjustcolor("orange", alpha.f = 0.7), lwd = 2)
 legend(x = "bottomleft", lwd = 2, text.font = 2,
        col= adjustcolor(c("blue","orange"), alpha.f = 0.7),
