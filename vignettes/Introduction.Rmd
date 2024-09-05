@@ -76,8 +76,8 @@ align="center">
 <tbody>
 <tr style="height: 26.75px;">
 <td style="width: 136.65px; height: 26.75px;" align="center">&nbsp;<b>Sample Frequency</b></td>
-<td style="width: 136.65px; height: 26.75px;">&nbsp;Lower</td>
-<td style="width: 136.65px; height: 26.75px;">Higher</td>
+<td style="width: 136.65px; height: 26.75px;">&nbsp;<b>Lower</b></td>
+<td style="width: 136.65px; height: 26.75px;"><b>Higher</b></td>
 </tr>
 <tr style="height: 26px;" align="center">
 <td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Month</b></td>
