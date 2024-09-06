@@ -31,7 +31,8 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
     high_freq <- 2 / temp
   }
 
-  if (is.null(dim(x))){
+  dim_x <- dim(x)
+  if (is.null(dim_x)){
     # Vector case
 
     nrs <- length(x)
@@ -55,7 +56,7 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
 
     return(Re(fft(datdf, inverse = TRUE)))
 
-  } else {
+  } else if (length(dim_x) <= 2){
     # Matrix case
 
     nrs <- nrow(x)
@@ -83,6 +84,10 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
 
     return(Re(mvfft(datdf, inverse = TRUE)))
 
+  } else {
+    stop(paste0("Please provide at most a 2 dimensional object (e.g. matrix,",
+                "data.frame)")
+         )
   }
 
 }
@@ -114,7 +119,9 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
     low_freq  <- 2 / trunc(high_freq)
     high_freq <- 2 / temp
   }
-  if (is.null(dim(x))){
+
+  dim_x <- dim(x)
+  if (is.null(dim_x)){
     nrs <- length(x)
 
     dftse_time <- dftse(seq(nrs)/nrs, low_freq, high_freq)
@@ -124,7 +131,7 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
 
     res <- dftse_x - (cov(dftse_x, dftse_time) / var_dftse_time) * dftse_time
 
-  } else {
+  } else if (length(dim_x) <= 2){
     nrs <- nrow(x)
     dftse_time <- dftse(seq(nrs)/nrs, low_freq, high_freq)
     dftse_x    <- dftse(x, low_freq, high_freq)
@@ -138,6 +145,10 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
       res[,i] <- dftse_x[,i] -
                  (cov(dftse_x[,i], dftse_time) / var_dftse_time) * dftse_time
     }
+  } else {
+    stop(paste0("Please provide at most a 2 dimensional object (e.g. matrix,",
+                "data.frame)")
+    )
   }
 
   return(res)
