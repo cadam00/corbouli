@@ -1,8 +1,8 @@
 \name{dftse}
 \alias{dftse}
-\title{DFT censoring}
+\title{Remove irrelevant frequencies}
 \description{
-Discrete Fourier Transform censoring
+Remove irrelevant frequencies
 }
 \usage{
 dftse(x, low_freq = NULL, high_freq = NULL)
@@ -28,14 +28,18 @@ is NULL, meaning that the \code{trunc(freq * 8)} will be used.
 \details{
 This is a pure R implementation of the DFT censoring. First DFT is applied on
 the data and this is filtered according to \code{low_freq} and \code{high_freq}.
-\code{low_freq} and \code{high_freq} must be both either between 0 and 1,
+Both \code{low_freq} and \code{high_freq} must be either between 0 and 1,
 meaning that they are frequencies of the period as radians, or both >1,
 indicating that both are starting and ending periods of the cycle.
+
+As relevant frequencies are meant the ones for which it holds
+\eqn{low \_ freq \leq freq \leq high \_ freq}
 }
 
 \value{
 Filtered object with length/dimensions same with the input x. Note that for
-inputs with dimensions a matrix will be returned.
+inputs with dimensions (e.g. \code{matrix}, \code{data.frame}) a matrix will be
+returned.
 }
 
 \references{
