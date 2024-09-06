@@ -34,8 +34,6 @@ a business cycle usually has business cycle at a lower period of 1.5 years and a
 higher period of 8 years. This information can be used while for filtering as
 expressed from the following Table [1](#ref-table1).
 
-business data with recurring periods between 1.5 and 8 years to be business-cycle fluctuations
-
 <table style="width: 368px; height: 119px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
 align="center">
