@@ -28,9 +28,13 @@ Domain Filter is used for extracting cycles from either both on stationary and
 non-stationary time series. This is one approximation of the ideal band pass
 filter of the series.
 
-As an example from Baxter and King ([1999](#ref-baxter1999)), the recommended
-lower (1.5 years) and higher (8 years) frequency for filtering from various data
-frequencies can be expressed from the following Table [1](#ref-table1).
+The minimum and the maximum periods of oscillation should be determined when
+using this method. As an example from Shaw ([1947](#ref-shaw1947)),
+a business cycle usually has business cycle at a lower period at 1.5 years and a
+higher period at 8 years. This information can be used while for filtering as
+expressed from the following Table [1](#ref-table1).
+
+business data with recurring periods between 1.5 and 8 years to be business-cycle fluctuations
 
 <table style="width: 368px; height: 119px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
@@ -53,7 +57,7 @@ align="center">
 </tr>
 <tr style="height: 26px;" align="center">
 <td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Year</b></td>
-<td style="width: 136.65px; height: 26px;" align="center">1.5</td>
+<td style="width: 136.65px; height: 26px;" align="center">2</td>
 <td style="width: 136.65px; height: 26px;" align="center">8</td>
 </tr>
 </tbody>
@@ -214,3 +218,7 @@ Pérez Pérez, J. (2011) <span class="nocase" id="ref-perez2011">COULIARI: Stata
 module to implement Corbae-Ouliaris frequency domain filter to time series
 data.</span> <em>Statistical Software Components</em>, S457218, Boston College
 Department of Economics.
+
+Shaw, E. S. (1947) <span class="nocase" id="ref-shaw1947">"Burns and Mitchell on
+Business Cycles."</span> <em>Journal of Political Economy</em>, <b>55</b>(4):
+pp. 281-298. https://doi.org/10.1086/256533
