@@ -67,6 +67,11 @@ test_that("corbae_ouliaris works", {
 
   expect_true(class(tryerror) == "try-error")
 
+  #if (high_freq > 1 && low_freq < 2)
+  tryerror <- try(corbae_ouliaris(array(c(USgdp), dim = rep(length(USgdp), 3)),
+                                  low_freq = 0.0625, high_freq = 0.3333),
+                  silent = TRUE)
+
 })
 
 test_that("dftse works", {
@@ -138,6 +143,12 @@ test_that("dftse works", {
 
   #if (high_freq > 1 && low_freq < 2)
   tryerror <- try(dftse(c(USgdp), low_freq = 1, high_freq = 5),
+                  silent = TRUE)
+
+  expect_true(class(tryerror) == "try-error")
+
+  tryerror <- try(dftse(array(c(USgdp), dim = rep(length(USgdp), 3)),
+                        low_freq = 0.0625, high_freq = 0.3333),
                   silent = TRUE)
 
   expect_true(class(tryerror) == "try-error")
