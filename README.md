@@ -188,29 +188,29 @@ legend(x = "bottomleft", lwd = 2, text.font = 2,
 
 # **References**
 
-Baxter, M., & King, R. (1999). <span class="nocase" id="ref-baxter1999">
+Baxter, M., & King, R. (1999), <span class="nocase" id="ref-baxter1999">
 Measuring Business Cycles: Approximate Band-Pass Filters for Economic Time
 Series,</span> <em>Review of Economics and Statistics</em> <b>81</b>(4), pp.
 575-593
 
-Corbae, D., Ouliaris, S., and Phillips, P. (2002).
+Corbae, D., Ouliaris, S., and Phillips, P. (2002),
 <span class="nocase" id="ref-corbae2002"> Band Spectral Regression with
 Trending-Data, <em>Econometrica</em> <b>70</b>(3), pp. 1067-1109.
 
-Corbae, D. and Ouliaris, S. (2006)<span class="nocase" id="ref-corbae2006">
+Corbae, D. and Ouliaris, S. (2006),<span class="nocase" id="ref-corbae2006">
 Extracting Cycles from Nonstationary Data,</span>in Corbae D., Durlauf S.N.,
 and Hansen B.E. (eds.) <em>Econometric Theory and Practice: Frontiers of
 Analysis and Applied Research</em>. Cambridge: Cambridge University Press, pp.
 167–177. https://doi.org/10.1017/CBO9781139164863.008.
 
-Ouliaris, S. (2009) <span class="nocase" id="ref-ouliaris2009">Ideal Band Pass
+Ouliaris, S. (2009), <span class="nocase" id="ref-ouliaris2009">Ideal Band Pass
 Filter For Stationary/Non-Stationary Series.</span>
 
-Pérez Pérez, J. (2011) <span class="nocase" id="ref-perez2011">COULIARI: Stata
+Pérez Pérez, J. (2011), <span class="nocase" id="ref-perez2011">COULIARI: Stata
 module to implement Corbae-Ouliaris frequency domain filter to time series
 data.</span> <em>Statistical Software Components</em>, S457218, Boston College
 Department of Economics.
 
-Shaw, E. S. (1947) <span class="nocase" id="ref-shaw1947">Burns and Mitchell on
-Business Cycles.</span> <em>Journal of Political Economy</em>, <b>55</b>(4):
+Shaw, E.S. (1947), <span class="nocase" id="ref-shaw1947">Burns and Mitchell on
+Business Cycles,</span> <em>Journal of Political Economy</em>, <b>55</b>(4):
 pp. 281-298. https://doi.org/10.1086/256533

@@ -2,7 +2,7 @@
 \alias{corbae_ouliaris}
 \title{Corbae-Ouliaris}
 \description{
-Corbae-Ouliaris Frequency Domain Filter
+Corbae-Ouliaris (2006) Frequency Domain Filter
 }
 \usage{
 corbae_ouliaris(x, low_freq = NULL, high_freq = NULL)
@@ -12,14 +12,17 @@ corbae_ouliaris(x, low_freq = NULL, high_freq = NULL)
 Vector, \code{data.frame} or \code{matrix} containing values for filtering.
 }
 \item{low_freq}{
-Number indicating the lowest frequency of the period as fractions of \eqn{\pi}.
+Number indicating the lowest period of oscillation as fractions of \eqn{\pi}.
 If \code{low_freq > 1}, indicating that the direct frequency of the data is
-provided, this is transformed internally into \code{2 / high_freq}.
+provided, this is transformed internally into \code{2 / high_freq}. The default
+is NULL, meaning that the \code{ifelse(freq > 1, trunc(freq * 1.5), 2)} will be
+used.
 }
 \item{high_freq}{
-Number indicating the lowest frequency of the period as radians of \eqn{\pi}. If
+Number indicating the highest period of oscillation as radians of \eqn{\pi}. If
 \code{high_freq > 1}, indicating that the direct frequency of the data is
-provided, this is transformed internally into \code{2 / low_freq}.
+provided, this is transformed internally into \code{2 / low_freq}. The default
+is NULL, meaning that the \code{trunc(freq * 8)} will be used.
 }
 }
 \details{
@@ -35,14 +38,14 @@ Filtered object with length/dimensions same with the input x.
 }
 
 \references{
-Corbae, Dean, Sam Ouliaris and Peter C.B. Phillips (2002). "Band Spectral
-Regression with Trending-Data", \emph{Econometrica} \bold{70}(3), pp.
-1067-1109.
+Corbae, D., Ouliaris, S., and Phillips, P. (2002), Band Spectral Regression with
+Trending-Data, \emph{Econometrica} \bold{70}(3), pp. 1067-1109.
 
-Corbae, D. and Ouliaris, S. (2006) ‘Extracting Cycles from Nonstationary Data’,
-in D. Corbae, S.N. Durlauf, and B.E. Hansen (eds.) \emph{Econometric Theory and
-Practice: Frontiers of Analysis and Applied Research}. Cambridge: Cambridge
-University Press, pp. 167–177. \doi{10.1017/CBO9781139164863.008}
+Corbae, D. and Ouliaris, S. (2006),
+Extracting Cycles from Nonstationary Data,</span>in Corbae D., Durlauf S.N.,
+and Hansen B.E. (eds.) \emph{Econometric Theory and Practice: Frontiers of
+Analysis and Applied Research}. Cambridge: Cambridge University Press, pp.
+167–177.\doi{10.1017/CBO9781139164863.008}.
 }
 
 \seealso{
