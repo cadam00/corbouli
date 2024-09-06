@@ -9,7 +9,8 @@ dftse(x, low_freq = NULL, high_freq = NULL)
 }
 \arguments{
 \item{x}{
-Vector, \code{data.frame} or \code{matrix} containing values for filtering.
+Vector, \code{data.frame}, \code{matrix} or any similar 1D/2D object containing
+values for filtering.
 }
 \item{low_freq}{
 Number indicating the lowest period of oscillation as fractions of \eqn{\pi}.
@@ -26,20 +27,25 @@ is NULL, meaning that the \code{trunc(freq * 8)} will be used.
 }
 }
 \details{
-This is a pure R implementation of the DFT censoring. First DFT is applied on
-the data and this is filtered according to \code{low_freq} and \code{high_freq}.
-Both \code{low_freq} and \code{high_freq} must be either between 0 and 1,
-meaning that they are frequencies of the period as radians, or both >1,
-indicating that both are starting and ending periods of the cycle.
+This is a pure R implementation of removing the irrelevant frequencies. First,
+DFT is applied on the data and this result is filtered according to
+\code{low_freq} and \code{high_freq}. Both \code{low_freq} and \code{high_freq}
+must be either between 0 and 1, meaning that they are frequencies of the period
+as radians, or both >1, indicating that both are starting and ending periods of
+the cycle.
 
-As relevant frequencies are meant the ones for which it holds
-\eqn{low \_ freq \leq freq \leq high \_ freq}
+\code{low_freq} and \code{high_freq} are used for keeping the relevant
+frequencies. These are meant to be the ones inside the range
+\eqn{[ low \_ freq, high \_ freq ]}. Therefore, values outside this range are
+removed.
+
+For 2-dimensional objects \code{x}, this transformation is applied per column.
 }
 
 \value{
 Filtered object with length/dimensions same with the input x. Note that for
-inputs with dimensions (e.g. \code{matrix}, \code{data.frame}) a matrix will be
-returned.
+inputs with dimensions (e.g. \code{matrix}, \code{data.frame}) a \code{matrix}
+will be returned.
 }
 
 \references{

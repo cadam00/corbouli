@@ -9,7 +9,8 @@ corbae_ouliaris(x, low_freq = NULL, high_freq = NULL)
 }
 \arguments{
 \item{x}{
-Vector, \code{data.frame} or \code{matrix} containing values for filtering.
+Vector, \code{data.frame}, \code{matrix} or any similar 1D/2D object containing
+values for filtering.
 }
 \item{low_freq}{
 Number indicating the lowest period of oscillation as fractions of \eqn{\pi}.
@@ -31,10 +32,17 @@ This is a pure R implementation of the filtering algorithm. \code{low_freq} and
 the business circle. \code{low_freq} and \code{high_freq} must be both either
 between 0 and 1, meaning that they are frequencies of the period as radians, or
 both >1, indicating that both are starting and ending periods of the cycle.
+
+\code{low_freq} and \code{high_freq} are used for keeping the relevant
+frequencies. These are meant to be the ones inside the range
+\eqn{[ low \_ freq, high \_ freq ]}. Therefore, values outside this range are
+removed.
+
+For 2-dimensional objects \code{x}, filtering per column is applied.
 }
 
 \value{
-Filtered object with length/dimensions same with the input x.
+Filtered object with length/dimensions and class same with the input x.
 }
 
 \references{

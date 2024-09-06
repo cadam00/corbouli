@@ -23,10 +23,11 @@ non-stationary time series. This is one approximation of the ideal band pass
 filter of the series.
 
 The minimum and the maximum periods of oscillation should be determined when
-using this method. As an example from Shaw ([1947](#ref-shaw1947)),
-a business cycle usually has business cycle at a lower period of 1.5 years and a
-higher period of 8 years. This information can be used while for filtering as
-expressed from the following Table [1](#ref-table1).
+using this method, so as to irrelevant to filtering frequencies are removed.
+As an example from Shaw ([1947](#ref-shaw1947)), a business cycle usually has
+business cycle at a lower period of 1.5 years and a higher period of 8 years.
+This information can be used while for filtering as expressed from the following
+Table [1](#ref-table1).
 
 <table style="width: 368px; height: 119px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
