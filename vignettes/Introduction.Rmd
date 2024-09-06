@@ -30,8 +30,8 @@ filter of the series.
 
 The minimum and the maximum periods of oscillation should be determined when
 using this method. As an example from Shaw ([1947](#ref-shaw1947)),
-a business cycle usually has business cycle at a lower period at 1.5 years and a
-higher period at 8 years. This information can be used while for filtering as
+a business cycle usually has business cycle at a lower period of 1.5 years and a
+higher period of 8 years. This information can be used while for filtering as
 expressed from the following Table [1](#ref-table1).
 
 business data with recurring periods between 1.5 and 8 years to be business-cycle fluctuations
@@ -219,6 +219,6 @@ module to implement Corbae-Ouliaris frequency domain filter to time series
 data.</span> <em>Statistical Software Components</em>, S457218, Boston College
 Department of Economics.
 
-Shaw, E. S. (1947) <span class="nocase" id="ref-shaw1947">"Burns and Mitchell on
-Business Cycles."</span> <em>Journal of Political Economy</em>, <b>55</b>(4):
+Shaw, E. S. (1947) <span class="nocase" id="ref-shaw1947">Burns and Mitchell on
+Business Cycles.</span> <em>Journal of Political Economy</em>, <b>55</b>(4):
 pp. 281-298. https://doi.org/10.1086/256533
