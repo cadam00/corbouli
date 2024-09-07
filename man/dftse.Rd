@@ -49,17 +49,16 @@ will be returned.
 }
 
 \references{
-Corbae, D., Ouliaris, S., and Phillips, P. (2002), Band Spectral Regression with
+Corbae, D., Ouliaris, S., & Phillips, P. (2002), Band Spectral Regression with
 Trending-Data. \emph{Econometrica} \bold{70}(3), pp. 1067-1109.
 
-Corbae, D. and Ouliaris, S. (2006), Extracting Cycles from Nonstationary Data,
-in Corbae D., Durlauf S.N., and Hansen B.E. (eds.). \emph{Econometric Theory and
+Corbae, D. & Ouliaris, S. (2006), Extracting Cycles from Nonstationary Data,
+in Corbae D., Durlauf S.N., & Hansen B.E. (eds.). \emph{Econometric Theory and
 Practice: Frontiers of Analysis and Applied Research}. Cambridge: Cambridge
 University Press, pp. 167–177. \doi{10.1017/CBO9781139164863.008}.
 
-Shaw, E.S. (1947), Burns and Mitchell on
-Business Cycles. \emph{Journal of Political Economy}, \bold{55}(4): pp. 281-298.
-\doi{10.1086/256533}.
+Shaw, E.S. (1947), Burns and Mitchell on Business Cycles. \emph{Journal of
+Political Economy}, \bold{55}(4): pp. 281-298. \doi{10.1086/256533}.
 }
 
 \seealso{
