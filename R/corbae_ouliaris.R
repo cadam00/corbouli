@@ -1,3 +1,27 @@
+## The current implementation is based on the following papers:
+#
+# - Corbae, D., Ouliaris, S., and Phillips, P. (2002), Band Spectral Regression
+# with Trending-Data, Econometrica 70(3), pp. 1067-1109.
+#
+# - Corbae, D. and Ouliaris, S. (2006), Extracting Cycles from Nonstationary
+# Data, in Corbae D., Durlauf S.N., and Hansen B.E. (eds.) Econometric Theory
+# and Practice: Frontiers of Analysis and Applied Research. Cambridge: Cambridge
+# University Press, pp. 167–177. https://doi.org/10.1017/CBO9781139164863.008.
+#
+# - Shaw, E.S. (1947), Burns and Mitchell on Business Cycles, Journal of Political
+# Economy, 55(4): pp. 281-298. https://doi.org/10.1086/256533
+#
+## Existing implementations of this algorithm in other programming languages:
+#
+# Eviews:
+# - Ouliaris, S. (2009), Ideal Band Pass Filter For Stationary/Non-Stationary
+# Series.
+#
+# Stata:
+# - Pérez Pérez, J. (2011), COULIARI: Stata module to implement Corbae-Ouliaris
+# frequency domain filter to time series data. Statistical Software Components,
+# S457218, Boston College Department of Economics.
+
 dftse <- function(x, low_freq = NULL, high_freq = NULL)
 {
   if (is.null(low_freq) || is.null(high_freq)){
@@ -8,9 +32,11 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
     }
   }
   if (is.null(low_freq)){
+    # Shaw (1947)
     low_freq <- ifelse(freq > 1, trunc(freq * 1.5), 2)
   }
   if (is.null(high_freq)){
+    # Shaw (1947)
     high_freq <- trunc(freq * 8)
   }
   if (low_freq < 0 || high_freq < 0){
@@ -97,9 +123,11 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
     freq <- frequency(x)
   }
   if (is.null(low_freq)){
+    # Shaw (1947)
     low_freq <- ifelse(freq > 1, freq * 1.5, 2)
   }
   if (is.null(high_freq)){
+    # Shaw (1947)
     high_freq <- freq * 8
   }
   if (low_freq < 0 || high_freq < 0){
