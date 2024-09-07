@@ -22,6 +22,7 @@
 # frequency domain filter to time series data. Statistical Software Components,
 # S457218, Boston College Department of Economics.
 
+# Remove irrelevant frequencies
 dftse <- function(x, low_freq = NULL, high_freq = NULL)
 {
   if (is.null(low_freq) || is.null(high_freq)){
@@ -51,7 +52,7 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
   if (high_freq > 2 && low_freq < 2){
     stop("If high_freq is period, then it should be low_freq >= 2")
   }
-  if (low_freq >= 1 && high_freq >= 2){
+  if (low_freq >= 2 && high_freq > 2){
     temp      <- low_freq
     low_freq  <- 2 / high_freq
     high_freq <- 2 / temp
@@ -118,6 +119,7 @@ dftse <- function(x, low_freq = NULL, high_freq = NULL)
 
 }
 
+# Corbae-Ouliaris (2006) Frequency Domain Filter
 corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
   if (is.null(low_freq) || is.null(high_freq)){
     freq <- frequency(x)
@@ -142,7 +144,7 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
   if (high_freq > 1 && low_freq < 2){
     stop("If high_freq is period, then it should be low_freq >= 2")
   }
-  if (low_freq >= 1 && high_freq >= 2){
+  if (low_freq >= 2 && high_freq > 2){
     temp      <- trunc(low_freq)
     low_freq  <- 2 / trunc(high_freq)
     high_freq <- 2 / temp
