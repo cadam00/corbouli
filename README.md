@@ -34,17 +34,20 @@ text-align: center; margin-left: auto; margin-right: auto;" border="1"
 align="center">
 <tbody>
 <tr style="height: 26.75px;">
-<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Sample Frequency</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">
+                                              &nbsp;<b>Sample Frequency</b></td>
 <td style="width: 136.65px; height: 26px;" align="center"><b>Lower</b></td>
 <td style="width: 136.65px; height: 26px;" align="center"><b>Higher</b></td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Month</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">
+                                                         &nbsp;<b>Month</b></td>
 <td style="width: 136.65px; height: 26px;" align="center">18</td>
 <td style="width: 136.65px; height: 26px;" align="center">96</td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Quarter</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">
+                                                       &nbsp;<b>Quarter</b></td>
 <td style="width: 136.65px; height: 26px;" align="center">6</td>
 <td style="width: 136.65px; height: 26px;" align="center">32</td>
 </tr>
@@ -56,10 +59,10 @@ align="center">
 </tbody>
 </table>
 <p align="center">
-  <span class="nocase" id="ref-table1"> Table 1: Low and high frequency in periods.
+  <span class="nocase" id="ref-table1">
+    Table 1: Lower and higher periods of oscillation.
   </span>
 </p>
-
 
 The same table in fragments of $\pi$ can be transformed into the Table
 [2](#ref-table2) using the $lower\ frequency = 2 / higher\ period$ and
@@ -72,17 +75,20 @@ text-align: center; margin-left: auto; margin-right: auto;" border="1"
 align="center">
 <tbody>
 <tr style="height: 26.75px;">
-<td style="width: 136.65px; height: 26.75px;" align="center">&nbsp;<b>Sample Frequency</b></td>
+<td style="width: 136.65px; height: 26.75px;" align="center">
+                                              &nbsp;<b>Sample Frequency</b></td>
 <td style="width: 136.65px; height: 26.75px;">&nbsp;<b>Lower</b></td>
 <td style="width: 136.65px; height: 26.75px;"><b>Higher</b></td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Month</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">
+                                                         &nbsp;<b>Month</b></td>
 <td style="width: 136.65px; height: 26px;" align="center">0.0208</td>
 <td style="width: 136.65px; height: 26px;" align="center">0.1111</td>
 </tr>
 <tr style="height: 26px;" align="center">
-<td style="width: 136.65px; height: 26px;" align="center">&nbsp;<b>Quarter</b></td>
+<td style="width: 136.65px; height: 26px;" align="center">
+                                                       &nbsp;<b>Quarter</b></td>
 <td style="width: 136.65px; height: 26px;" align="center">0.0625</td>
 <td style="width: 136.65px; height: 26px;" align="center">0.3333 </td>
 </tr>
@@ -94,7 +100,9 @@ align="center">
 </tbody>
 </table>
 <p align="center">
-  <span class="nocase" id="ref-table2"> Table 2: Low and high frequency in fragments of $\pi$.
+  <span class="nocase" id="ref-table2">
+    Table 2: Low and high frequency in fragments of $\pi$.
+  </span>
 </p>
 
 The longer the series, the more the long run frequency is expressed by a
