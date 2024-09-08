@@ -114,7 +114,7 @@ align="center">
 
 The longer the series, the more the long run frequency is expressed by a
 lower frequency as fragment of $\pi$ equal to 0. Moreover, the output gap can be
-expressed using higher frequency as fragment of $\pi$ equal equal to 1
+expressed using higher frequency as fragment of $\pi$ equal to 1
 ([Ouliaris, 2009](#ref-ouliaris2009)).
 
 # **Example**
