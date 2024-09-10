@@ -29,10 +29,11 @@ is NULL, meaning that the \code{trunc(freq * 8)} will be used.
 \details{
 This is a pure R implementation of removing the irrelevant frequencies. First,
 DFT is applied on the data and this result is filtered according to
-\code{low_freq} and \code{high_freq}. Both \code{low_freq} and \code{high_freq}
-must be either between 0 and 1, meaning that they are frequencies of the period
-as radians, or both >1, indicating that both are starting and ending periods of
-the cycle.
+\code{low_freq} and \code{high_freq}. Finally, an inverse DFT is performed on
+these relevant frequencies. Both \code{low_freq} and \code{high_freq} must be
+either between 0 and 1, meaning that they are frequencies of the period as
+radians, or both >1, indicating that both are starting and ending periods of the
+cycle.
 
 \code{low_freq} and \code{high_freq} are used for keeping the relevant
 frequencies. These are meant to be the ones inside the range
@@ -45,7 +46,7 @@ For 2-dimensional objects \code{x}, this transformation is applied per column.
 \value{
 Filtered object with length/dimensions same with the input x. Note that for
 inputs with dimensions (e.g. \code{matrix}, \code{data.frame}) a \code{matrix}
-will be returned.
+object will be returned.
 }
 
 \references{
