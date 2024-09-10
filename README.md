@@ -2,6 +2,7 @@
   [![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://github.com/cadam00/corbouli)
   [![R-CMD-check](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/corbouli?branch=main)
+[![DOI](https://zenodo.org/badge/850634794.svg)](https://zenodo.org/doi/10.5281/zenodo.13740089)
 <!-- badges: end -->
 
 Implementation of the Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency
@@ -19,8 +20,7 @@ remotes::install_github("cadam00/corbouli")
 
 To cite the latest development version, please use:
 
-> Adam C (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering. R package
-> version 0.1.0. Available at <https://github.com/cadam00/corbouli>.
+> Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.13740090
 
 # **Corbae-Ouliaris Frequency Domain Filtering**
 
