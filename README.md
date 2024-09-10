@@ -15,6 +15,13 @@ if (!require(remotes)) install.packages("remotes")
 remotes::install_github("cadam00/corbouli")
 ```
 
+# **Citation**
+
+To cite the latest development version, please use:
+
+> Adam C (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering. R package
+> version 0.1.0. Available at <https://github.com/cadam00/corbouli>.
+
 # **Corbae-Ouliaris Frequency Domain Filtering**
 
 Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency
