@@ -21,6 +21,9 @@
 # - Pérez Pérez, J. (2011), COULIARI: Stata module to implement Corbae-Ouliaris
 # frequency domain filter to time series data. Statistical Software Components,
 # S457218, Boston College Department of Economics.
+#
+# Some alternative filtering techniques on time series can be found on the R
+# package named mFilter.
 
 # Remove irrelevant frequencies
 dftse <- function(x, low_freq = NULL, high_freq = NULL)
