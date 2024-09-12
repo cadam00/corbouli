@@ -23,7 +23,8 @@
 # S457218, Boston College Department of Economics.
 #
 # Some alternative filtering techniques on time series can be found on the R
-# package named mFilter.
+# package named mFilter. Also low_freq and high_freq input handling was inspired
+# from there.
 
 # Remove irrelevant frequencies
 dftse <- function(x, low_freq = NULL, high_freq = NULL)
