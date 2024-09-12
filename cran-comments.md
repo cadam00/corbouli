@@ -4,6 +4,7 @@
 
 - Add CRAN version badge on README file and update text.
 
+- Update DESCRIPTION text.
 
 ## R CMD check results
 

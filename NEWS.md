@@ -6,6 +6,8 @@
 
 - Add CRAN version badge.
 
+- Update DESCRIPTION text.
+
 # corbouli 0.1.0
 
 ## Major changes
