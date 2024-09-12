@@ -11,7 +11,13 @@ Domain Filter.
 
 # **Install**
 
-Development version of the package can be installed via
+The official [(CRAN)](https://cran.r-project.org/) version of the package can be
+installed using
+``` r
+install.packages("corbouli")
+```
+
+Alternatively, the development version of the package can be installed via
 ``` r
 if (!require(remotes)) install.packages("remotes")
 remotes::install_github("cadam00/corbouli")
@@ -19,10 +25,17 @@ remotes::install_github("cadam00/corbouli")
 
 # **Citation**
 
-To cite the latest development version, please use:
+To cite the official [(CRAN)](https://cran.r-project.org/) version of the
+package, please use
+
+> Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering.
+> R package version 0.1.0. Available at
+> <https://cran.r-project.org/web/packages/corbouli/index.html>.
+
+Alternatively, to cite the latest development version, please use:
 
 > Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering
-(v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.13740090
+(v0.1.1). Zenodo. Available at https://doi.org/10.5281/zenodo.13740090
 
 # **Corbae-Ouliaris Frequency Domain Filtering**
 
