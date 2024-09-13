@@ -207,7 +207,7 @@ legend(x = "bottomleft", lwd = 2, text.font = 2,
 Baxter, M., & King, R. (1999), <span class="nocase" id="ref-baxter1999">
 Measuring Business Cycles: Approximate Band-Pass Filters for Economic Time
 Series.</span> <em>Review of Economics and Statistics</em> <b>81</b>(4), pp.
-575-593
+575-593.
 
 Corbae, D., Ouliaris, S., & Phillips, P. (2002),
 <span class="nocase" id="ref-corbae2002"> Band Spectral Regression with
