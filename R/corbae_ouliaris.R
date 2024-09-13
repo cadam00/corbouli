@@ -9,7 +9,7 @@
 # University Press, pp. 167–177. https://doi.org/10.1017/CBO9781139164863.008.
 #
 # - Shaw, E.S. (1947), Burns and Mitchell on Business Cycles, Journal of
-# Political # Economy, 55(4): pp. 281-298. https://doi.org/10.1086/256533
+# Political # Economy, 55(4): pp. 281-298. https://doi.org/10.1086/256533.
 #
 ## Existing implementations of this algorithm in other programming languages:
 #
