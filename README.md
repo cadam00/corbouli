@@ -32,7 +32,7 @@ package, please use
 
 > Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering.
 > R package version 0.1.0. Available at
-> <https://cran.r-project.org/web/packages/corbouli/index.html>.
+> <https://doi.org/10.32614/CRAN.package.corbouli>.
 
 Alternatively, to cite the latest development version, please use:
 
