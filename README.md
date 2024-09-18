@@ -151,7 +151,9 @@ plot(USgdp, main = "Quarterly US GDP in billions of chained 2017 dollars
 ```
 
 <p align="center">
-    <img src="man/figures/figure1.png" alt="Fig1" width="50%"/>
+    <img src="man/figures/figure1.png"
+    alt="Fig. 1: USgdp dataset."
+    width="50%"/>
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure1"></span>Fig. 1: USgdp dataset.
@@ -169,7 +171,9 @@ plot(co,
 ```
 
 <p align="center">
-    <img src="man/figures/figure2.png" alt="Fig2" width="50%"/>
+    <img src="man/figures/figure2.png"
+    alt="Fig. 2: Corbae-Ouliaris FD Filter cycles."
+    width="50%"/>
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure2"></span>Fig. 2: Corbae-Ouliaris FD Filter cycles.
@@ -189,7 +193,9 @@ legend(x = "topleft", lwd = 2, text.font = 2,
        legend=c("Original data", "Decycled data"))
 ```
 <p align="center">
-    <img src="man/figures/figure3.png" alt="Fig3" width="50%"/>
+    <img src="man/figures/figure3.png"
+    alt="Fig. 3: Original vs Decycled USgdp data."
+    width="50%"/>
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure3"></span>Fig. 3: Original vs Decycled USgdp data.
@@ -213,7 +219,9 @@ legend(x = "bottomleft", lwd = 2, text.font = 2,
 ```
 
 <p align="center">
-    <img src="man/figures/figure4.png" alt="Fig4" width="50%"/>
+    <img src="man/figures/figure4.png"
+    alt="Fig. 4: Business cycle vs Output gap."
+    width="50%"/>
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure4"></span>Fig. 4: Business cycle vs Output gap.

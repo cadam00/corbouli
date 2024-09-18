@@ -70,7 +70,6 @@ align="center">
   </span>
 </p>
 
-
 The same table in fragments of $\pi$ can be transformed into the Table
 [2](#ref-table2) using the $lower\ frequency = 2 / higher\ period$ and
 $higher\ frequency = 2 / lower\ period$. For instance, for quarterly sampled
@@ -134,7 +133,9 @@ plot(USgdp, main = "Quarterly US GDP in billions of chained 2017 dollars
 ```
 
 <p align="center">
-    <img src="figure1.png" alt="Fig1" width="50%"/>
+    <img src="figure1.png"
+    alt="Fig. 1: USgdp dataset."
+    width="50%"/>
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure1"></span>Fig. 1: USgdp dataset.
@@ -152,7 +153,9 @@ plot(co,
 ```
 
 <p align="center">
-    <img src="figure2.png" alt="Fig2" width="50%"/>
+    <img src="figure2.png"
+    alt="Fig. 2: Corbae-Ouliaris FD Filter cycles."
+    width="50%"/>
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure2"></span>Fig. 2: Corbae-Ouliaris FD Filter cycles.
@@ -172,7 +175,9 @@ legend(x = "topleft", lwd = 2, text.font = 2,
        legend=c("Original data", "Decycled data"))
 ```
 <p align="center">
-    <img src="figure3.png" alt="Fig3" width="50%"/>
+    <img src="figure3.png"
+    alt="Fig. 3: Original vs Decycled USgdp data."
+    width="50%"/>
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure3"></span>Fig. 3: Original vs Decycled USgdp data.
@@ -196,7 +201,9 @@ legend(x = "bottomleft", lwd = 2, text.font = 2,
 ```
 
 <p align="center">
-    <img src="figure4.png" alt="Fig4" width="50%"/>
+    <img src="figure4.png"
+    alt="Fig. 4: Business cycle vs Output gap."
+    width="50%"/>
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure4"></span>Fig. 4: Business cycle vs Output gap.

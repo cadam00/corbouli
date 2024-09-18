@@ -12,7 +12,7 @@ Description: Corbae-Ouliaris frequency domain filtering. According to
              stationary and non-stationary time series.
 License: GPL-3
 Encoding: UTF-8
-URL: https://github.com/cadam00/corbouli
+URL: https://github.com/cadam00/corbouli, https://cadam00.github.io/corbouli
 BugReports: https://github.com/cadam00/corbouli/issues
 LazyData: true
 Imports: stats
