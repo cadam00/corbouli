@@ -65,17 +65,21 @@ Political Economy}, \bold{55}(4): pp. 281-298. \doi{10.1086/256533}.
 \examples{
 # Apply on ts
 data(USgdp)
-corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 0.3333)
+res <- corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 0.3333)
+head(res)
 
 # Apply on vector
 data(USgdp)
-corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 0.3333)
+res <- corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 0.3333)
+head(res)
 
 # Apply on matrix per column
 mat <- matrix(USgdp, ncol = 4)
-corbae_ouliaris(mat, low_freq = 0.0625, high_freq = 0.3333)
+res <- corbae_ouliaris(mat, low_freq = 0.0625, high_freq = 0.3333)
+head(res)
 
 # Apply on data.frame per column
 dfmat <- as.data.frame(mat)
-corbae_ouliaris(dfmat, low_freq = 0.0625, high_freq = 0.3333)
+res <- corbae_ouliaris(dfmat, low_freq = 0.0625, high_freq = 0.3333)
+head(res)
 }

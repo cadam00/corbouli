@@ -4,8 +4,6 @@
   [![R-CMD-check](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/corbouli?branch=main)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13740089.svg)](https://doi.org/10.5281/zenodo.13740089)
-
-
 <!-- badges: end -->
 
 Implementation of the Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency

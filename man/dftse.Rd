@@ -69,16 +69,20 @@ Political Economy}, \bold{55}(4): pp. 281-298. \doi{10.1086/256533}.
 \examples{
 # Apply on ts object
 data(USgdp)
-corbae_ouliaris(USgdp, low_freq = 0.0625, high_freq = 0.3333)
+res <- dftse(USgdp, low_freq = 0.0625, high_freq = 0.3333)
+head(res)
 
 # Apply on vector
-dftse(c(USgdp), low_freq = 0.0625, high_freq = 0.3333)
+res <- dftse(c(USgdp), low_freq = 0.0625, high_freq = 0.3333)
+head(res)
 
 # Apply on matrix per column
-mat <- matrix(USgdp, ncol = 12)
-dftse(mat, low_freq = 0.0625, high_freq = 0.3333)
+mat <- matrix(USgdp, ncol = 4)
+res <- dftse(mat, low_freq = 0.0625, high_freq = 0.3333)
+head(res)
 
 # Apply on data.frame per column
 dfmat <- as.data.frame(mat)
-dftse(dfmat, low_freq = 0.0625, high_freq = 0.3333)
+res <- dftse(dfmat, low_freq = 0.0625, high_freq = 0.3333)
+head(res)
 }

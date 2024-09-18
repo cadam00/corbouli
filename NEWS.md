@@ -10,6 +10,8 @@
 
 - Add pkgdown site.
 
+- Update examples.
+
 # corbouli 0.1.0
 
 ## Major changes
