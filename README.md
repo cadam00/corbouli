@@ -37,7 +37,7 @@ package, please use
 Alternatively, to cite the latest development version, please use:
 
 > Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering
-(v0.1.1). Zenodo. Available at https://doi.org/10.5281/zenodo.13740089
+(v0.1.1). Zenodo. Available at <https://doi.org/10.5281/zenodo.13740089>
 
 # **Corbae-Ouliaris Frequency Domain Filtering**
 
