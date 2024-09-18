@@ -137,7 +137,7 @@ expressed using higher frequency as fragment of $\pi$ equal to 1
 # **Example**
 
 For this example, the quarterly US GDP in billions of chained 2017 dollars
-(Seasonally adjusted) will be used. For 
+(Seasonally adjusted) will be used.
 
 ``` r
 # Import package to workspace
