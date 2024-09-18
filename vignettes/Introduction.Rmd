@@ -35,7 +35,7 @@ a lower period of 1.5 years and a higher period of 8 years. This information can
 be used while for filtering as expressed from the following
 Table [1](#ref-table1).
 
-<table style="width: 368px; height: 119px; vertical-align: middle;
+<table style="width: 368px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
 align="center">
 <tbody>
@@ -76,7 +76,7 @@ $higher\ frequency = 2 / lower\ period$. For instance, for quarterly sampled
 time series, we have $lower\ frequency = 2 / 32 = 0.0625$ and
 $higher\ frequency = 2 / 6 = 0.3333$.
 
-<table style="width: 368px; height: 119px; vertical-align: middle;
+<table style="width: 368px; vertical-align: middle;
 text-align: center; margin-left: auto; margin-right: auto;" border="1"
 align="center">
 <tbody>
