@@ -4,9 +4,11 @@
 
 - Update comments on corabe_ouliaris.R file.
 
-- Add CRAN version badge.
+- Add README.md and Introduction.Rmd.
 
 - Update DESCRIPTION text.
+
+- Add pkgdown site.
 
 # corbouli 0.1.0
 
