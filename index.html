@@ -45,11 +45,14 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9">
-<p>Implementation of the Corbae and Ouliaris (<a href="#ref-corbae2006">2006</a>) Frequency Domain Filter.</p>
 <div class="section level1">
-<div class="page-header"><h1 id="install">
-<strong>Install</strong><a class="anchor" aria-label="anchor" href="#install"></a>
+<div class="page-header"><h1 id="corbae-and-ouliaris-2006-frequency-domain-filter-in-r">
+<strong>Corbae and Ouliaris (<a href="#ref-corbae2006">2006</a>) Frequency Domain Filter in R</strong><a class="anchor" aria-label="anchor" href="#corbae-and-ouliaris-2006-frequency-domain-filter-in-r"></a>
 </h1></div>
+<div class="section level2">
+<h2 id="install">
+<strong>Install</strong><a class="anchor" aria-label="anchor" href="#install"></a>
+</h2>
 <p>The official <a href="https://cran.r-project.org/" class="external-link">(CRAN)</a> version of the package can be installed using</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"corbouli"</span><span class="op">)</span></span></code></pre></div>
@@ -57,6 +60,7 @@
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org" class="external-link">remotes</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"cadam00/corbouli"</span><span class="op">)</span></span></code></pre></div>
+</div>
 </div>
 <div class="section level1">
 <h1 id="citation">
@@ -179,11 +183,10 @@ text-align: center; margin-left: auto; margin-right: auto;" border="1" align="ce
 <span id="ref-table2" class="nocase"> Table 2: Low and high frequency in fragments of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>. </span>
 </p>
 <p>The longer the series, the more the long run frequency is expressed by a lower frequency as fragment of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math> equal to 0. Moreover, the output gap can be expressed using higher frequency as fragment of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math> equal to 1 (<a href="#ref-ouliaris2009">Ouliaris, 2009</a>).</p>
-</div>
-<div class="section level1">
-<h1 id="example">
+<div class="section level2">
+<h2 id="example">
 <strong>Example</strong><a class="anchor" aria-label="anchor" href="#example"></a>
-</h1>
+</h2>
 <p>For this example, the quarterly US GDP in billions of chained 2017 dollars (Seasonally adjusted) will be used.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Import package to workspace</span></span>
@@ -248,16 +251,17 @@ text-align: center; margin-left: auto; margin-right: auto;" border="1" align="ce
 <span id="ref-Figure4"></span>Fig. 4: Business cycle vs Output gap.
 </p>
 </div>
-<div class="section level1">
-<h1 id="references">
+<div class="section level2">
+<h2 id="references">
 <strong>References</strong><a class="anchor" aria-label="anchor" href="#references"></a>
-</h1>
+</h2>
 <p>Baxter, M., &amp; King, R. (1999), <span id="ref-baxter1999" class="nocase"> Measuring Business Cycles: Approximate Band-Pass Filters for Economic Time Series.</span> <em>Review of Economics and Statistics</em> <b>81</b>(4), pp. 575-593.</p>
 <p>Corbae, D., Ouliaris, S., &amp; Phillips, P. (2002), <span class="nocase" id="ref-corbae2002"> Band Spectral Regression with Trending-Data. <em>Econometrica</em> <b>70</b>(3), pp. 1067-1109.</span></p>
 <p>Corbae, D. &amp; Ouliaris, S. (2006),<span id="ref-corbae2006" class="nocase"> Extracting Cycles from Nonstationary Data,</span>in Corbae D., Durlauf S.N., &amp; Hansen B.E. (eds.). <em>Econometric Theory and Practice: Frontiers of Analysis and Applied Research</em>. Cambridge: Cambridge University Press, pp. 167–177. <a href="https://doi.org/10.1017/CBO9781139164863.008" class="external-link uri">https://doi.org/10.1017/CBO9781139164863.008</a>.</p>
 <p>Ouliaris, S. (2009), <span id="ref-ouliaris2009" class="nocase">Ideal Band Pass Filter For Stationary/Non-Stationary Series.</span></p>
 <p>Pérez Pérez, J. (2011), <span id="ref-perez2011" class="nocase">COULIARI: Stata module to implement Corbae-Ouliaris frequency domain filter to time series data.</span> <em>Statistical Software Components</em>, S457218, Boston College Department of Economics.</p>
 <p>Shaw, E.S. (1947), <span id="ref-shaw1947" class="nocase">Burns and Mitchell on Business Cycles.</span> <em>Journal of Political Economy</em>, <b>55</b>(4): pp. 281-298. <a href="https://doi.org/10.1086/256533" class="external-link uri">https://doi.org/10.1086/256533</a>.</p>
+</div>
 </div>
 
   </main><aside class="col-md-3"><div class="links">
@@ -295,7 +299,7 @@ text-align: center; margin-left: auto; margin-right: auto;" border="1" align="ce
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://CRAN.R-project.org/package=corbouli" class="external-link"><img src="https://www.r-pkg.org/badges/version/corbouli" alt="CRAN status"></a></li>
-<li><a href="https://github.com/cadam00/corbouli" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.1-blue.svg" alt="CRAN version"></a></li>
+<li><a href="https://github.com/cadam00/corbouli" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.1-blue.svg" alt="Developmental version"></a></li>
 <li><a href="https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://app.codecov.io/gh/cadam00/corbouli?branch=main" class="external-link"><img src="https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://doi.org/10.5281/zenodo.13740089" class="external-link"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.13740089.svg" alt="DOI"></a></li>
@@ -311,7 +315,7 @@ text-align: center; margin-left: auto; margin-right: auto;" border="1" align="ce
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
     </footer>
