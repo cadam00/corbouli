@@ -21,7 +21,9 @@ vignette: >
 knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 ```
 
-# **Corbae-Ouliaris Frequency Domain Filtering**
+# **Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency Domain Filter in R**
+
+## **Corbae-Ouliaris Frequency Domain Filtering**
 
 Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency
 Domain Filter is used for extracting cycles from either both on stationary and
@@ -116,7 +118,7 @@ lower frequency as fragment of $\pi$ equal to 0. Moreover, the output gap can be
 expressed using higher frequency as fragment of $\pi$ equal to 1
 ([Ouliaris, 2009](#ref-ouliaris2009)).
 
-# **Example**
+## **Example**
 
 For this example, the quarterly US GDP in billions of chained 2017 dollars
 (Seasonally adjusted) will be used.
@@ -209,7 +211,7 @@ legend(x = "bottomleft", lwd = 2, text.font = 2,
 <span id="ref-Figure4"></span>Fig. 4: Business cycle vs Output gap.
 </p>
 
-# **References**
+## **References**
 
 Baxter, M., & King, R. (1999), <span class="nocase" id="ref-baxter1999">
 Measuring Business Cycles: Approximate Band-Pass Filters for Economic Time

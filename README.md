@@ -1,15 +1,14 @@
 <!-- badges: start -->
   [![CRAN status](https://www.r-pkg.org/badges/version/corbouli)](https://CRAN.R-project.org/package=corbouli)
-  [![CRAN version](https://img.shields.io/badge/devel%20version-0.1.1-blue.svg)](https://github.com/cadam00/corbouli)
+  [![Developmental version](https://img.shields.io/badge/devel%20version-0.1.1-blue.svg)](https://github.com/cadam00/corbouli)
   [![R-CMD-check](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/corbouli?branch=main)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13740089.svg)](https://doi.org/10.5281/zenodo.13740089)
 <!-- badges: end -->
 
-Implementation of the Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency
-Domain Filter.
+# **Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency Domain Filter in R**
 
-# **Install**
+## **Install**
 
 The official [(CRAN)](https://cran.r-project.org/) version of the package can be
 installed using
@@ -132,7 +131,7 @@ lower frequency as fragment of $\pi$ equal to 0. Moreover, the output gap can be
 expressed using higher frequency as fragment of $\pi$ equal to 1
 ([Ouliaris, 2009](#ref-ouliaris2009)).
 
-# **Example**
+## **Example**
 
 For this example, the quarterly US GDP in billions of chained 2017 dollars
 (Seasonally adjusted) will be used.
@@ -225,7 +224,7 @@ legend(x = "bottomleft", lwd = 2, text.font = 2,
 <span id="ref-Figure4"></span>Fig. 4: Business cycle vs Output gap.
 </p>
 
-# **References**
+## **References**
 
 Baxter, M., & King, R. (1999), <span class="nocase" id="ref-baxter1999">
 Measuring Business Cycles: Approximate Band-Pass Filters for Economic Time
