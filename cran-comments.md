@@ -2,9 +2,13 @@
 
 - Update comments on corabe_ouliaris.R file.
 
-- Add CRAN version badge on README file and update text.
+- Add README.md and Introduction.Rmd.
 
 - Update DESCRIPTION text.
+
+- Add pkgdown site.
+
+- Update examples.
 
 ## R CMD check results
 

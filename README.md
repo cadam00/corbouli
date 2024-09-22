@@ -22,7 +22,7 @@ if (!require(remotes)) install.packages("remotes")
 remotes::install_github("cadam00/corbouli")
 ```
 
-# **Citation**
+## **Citation**
 
 To cite the official [(CRAN)](https://cran.r-project.org/) version of the
 package, please use
@@ -36,12 +36,43 @@ Alternatively, to cite the latest development version, please use:
 > Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering
 (v0.1.1). Zenodo. Available at <https://doi.org/10.5281/zenodo.13740089>
 
-# **Corbae-Ouliaris Frequency Domain Filtering**
+## **Corbae-Ouliaris Frequency Domain Filtering**
 
 Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency
 Domain Filter is used for extracting cycles from either both on stationary and
 non-stationary time series. This is one approximation of the ideal band pass
 filter of the series.
+
+The main idea of this filtering algorithm is illustrated
+in Fig. [1](#ref-Figure1) and [2](#ref-Figure2). The main idea of the DFTSE
+subroutine is shown in Fig. [1](#ref-Figure1), where it includes DFT (Discrete
+Fourier Transform) of the times series, then frequencies lower and higher
+by periods of oscillation thresholds are assigned to zero and finally
+perform IDFT (Inverse Discrete Fourier Transform). Additional implementation
+details of this subroutine can be found at source code of the function
+`corbouli::dftse`.
+
+<p align="center">
+    <img src="man/figures/figure1.png"
+    alt="Fig. 1: DFTSE subroutine. DFT, censore and IDFT time series."
+    width="50%"/>
+</p>
+<p class="caption" align="center">
+<span id="ref-Figure1"></span>Fig. 1: DFTSE subroutine.
+</p>
+
+The final algorithm is described in Fig. [2](#ref-Figure2),
+where filtered series is the residuals of the regression of $DFSE(x)$ over
+$DFSE\big( 1,\, ...,\, length(x) \big)$.
+
+<p align="center">
+    <img src="man/figures/figure2.png"
+    alt="Fig. 2: Corbae-Ouliaris main algorithm. See corbouli::corbae_ouliaris."
+    width="50%"/>
+</p>
+<p class="caption" align="center">
+<span id="ref-Figure2"></span>Fig. 2: Corbae-Ouliaris main algorithm.
+</p>
 
 The minimum and the maximum periods of oscillation should be determined when
 using this method, so as to irrelevant to filtering frequencies are removed.
@@ -148,12 +179,12 @@ plot(USgdp, main = "Quarterly US GDP in billions of chained 2017 dollars
 ```
 
 <p align="center">
-    <img src="man/figures/figure1.png"
-    alt="Fig. 1: USgdp dataset."
+    <img src="man/figures/figure3.png"
+    alt="Fig. 3: USgdp dataset."
     width="50%"/>
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure1"></span>Fig. 1: USgdp dataset.
+<span id="ref-Figure3"></span>Fig. 3: USgdp dataset.
 </p>
 
 ```r
@@ -168,12 +199,12 @@ plot(co,
 ```
 
 <p align="center">
-    <img src="man/figures/figure2.png"
-    alt="Fig. 2: Corbae-Ouliaris FD Filter cycles."
+    <img src="man/figures/figure4.png"
+    alt="Fig. 4: Corbae-Ouliaris FD Filter cycles."
     width="50%"/>
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure2"></span>Fig. 2: Corbae-Ouliaris FD Filter cycles.
+<span id="ref-Figure4"></span>Fig. 4: Corbae-Ouliaris FD Filter cycles.
 </p>
 
 ```r
@@ -190,17 +221,17 @@ legend(x = "topleft", lwd = 2, text.font = 2,
        legend=c("Original data", "Decycled data"))
 ```
 <p align="center">
-    <img src="man/figures/figure3.png"
-    alt="Fig. 3: Original vs Decycled USgdp data."
+    <img src="man/figures/figure5.png"
+    alt="Fig. 5: Original vs Decycled USgdp data."
     width="50%"/>
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure3"></span>Fig. 3: Original vs Decycled USgdp data.
+<span id="ref-Figure5"></span>Fig. 5: Original vs Decycled USgdp data.
 </p>
 
 As noted by Ouliaris ([2009](#ref-ouliaris2009)), for setting `high_freq = 1`
 the output gap series than business cycle one will have higher volatility (Fig.
-[4](#ref-Figure4)).
+[6](#ref-Figure6)).
 
 ```r
 # Extract output gap
@@ -216,12 +247,12 @@ legend(x = "bottomleft", lwd = 2, text.font = 2,
 ```
 
 <p align="center">
-    <img src="man/figures/figure4.png"
-    alt="Fig. 4: Business cycle vs Output gap."
+    <img src="man/figures/figure6.png"
+    alt="Fig. 6: Business cycle vs Output gap."
     width="50%"/>
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure4"></span>Fig. 4: Business cycle vs Output gap.
+<span id="ref-Figure6"></span>Fig. 6: Business cycle vs Output gap.
 </p>
 
 ## **References**
@@ -252,3 +283,4 @@ Department of Economics.
 Shaw, E.S. (1947), <span class="nocase" id="ref-shaw1947">Burns and Mitchell on
 Business Cycles.</span> <em>Journal of Political Economy</em>, <b>55</b>(4):
 pp. 281-298. https://doi.org/10.1086/256533.
+
