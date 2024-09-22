@@ -2,10 +2,10 @@
 title: "Introduction to corbouli"
 author: "Christos Adam"
 output:
-  pdf_document: default
-  word_document: default
   rmarkdown::html_vignette:
     number_sections: false
+  pdf_document: default
+  word_document: default
 fontsize: 11pt
 urlcolor: blue
 linkcolor: blue
