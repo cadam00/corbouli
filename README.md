@@ -45,10 +45,10 @@ filter of the series.
 
 The main idea of this filtering algorithm is illustrated
 in Fig. [1](#ref-Figure1) and [2](#ref-Figure2). The main idea of the DFTSE
-subroutine is shown in Fig. [1](#ref-Figure1), where it includes DFT (Discrete
+subroutine is shown in Fig. [1](#ref-Figure1), where DFT (Discrete
 Fourier Transform) of the times series, then frequencies lower and higher
-by periods of oscillation thresholds are assigned to zero and finally
-perform IDFT (Inverse Discrete Fourier Transform). Additional implementation
+by periods of oscillation thresholds are assigned to zero and finally IDFT
+(Inverse Discrete Fourier Transform) are performed. Additional implementation
 details of this subroutine can be found at source code of the function
 `corbouli::dftse`.
 
