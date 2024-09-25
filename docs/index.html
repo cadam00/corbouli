@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">corbouli</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,7 @@
 </blockquote>
 <p>Alternatively, to cite the latest development version, please use:</p>
 <blockquote>
-<p>Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering (v0.1.1). Zenodo. Available at <a href="https://doi.org/10.5281/zenodo.13740089" class="external-link uri">https://doi.org/10.5281/zenodo.13740089</a></p>
+<p>Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering (v0.1.2). Zenodo. Available at <a href="https://doi.org/10.5281/zenodo.13740089" class="external-link uri">https://doi.org/10.5281/zenodo.13740089</a></p>
 </blockquote>
 </div>
 <div class="section level2">
@@ -85,7 +85,7 @@
 <p class="caption" align="center">
 <span id="ref-Figure1"></span>Fig. 1: DFTSE subroutine.
 </p>
-<p>The final algorithm is described in Fig. <a href="#ref-Figure2">2</a>, where filtered series is the residuals of the regression of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>F</mi><mi>S</mi><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">DFSE(x)</annotation></semantics></math> over <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>F</mi><mi>S</mi><mi>E</mi><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mspace width="0.167em"></mspace><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mspace width="0.167em"></mspace><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">DFSE\big( 1,\, ...,\, length(x) \big)</annotation></semantics></math>.</p>
+<p>The final algorithm is described in Fig. <a href="#ref-Figure2">2</a>, where filtered series is the residuals of the regression of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>F</mi><mi>S</mi><mi>T</mi><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">DFSTE(x)</annotation></semantics></math> over the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>F</mi><mi>S</mi><mi>T</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">DFSTE</annotation></semantics></math> of the normalized trend.</p>
 <p align="center">
 <img src="reference/figures/figure2.png" alt="Fig. 2: Corbae-Ouliaris main algorithm. See corbouli::corbae_ouliaris." width="50%"></p>
 <p class="caption" align="center">
@@ -311,7 +311,7 @@ text-align: center; margin-left: auto; margin-right: auto;" border="1" align="ce
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://CRAN.R-project.org/package=corbouli" class="external-link"><img src="https://www.r-pkg.org/badges/version/corbouli" alt="CRAN status"></a></li>
-<li><a href="https://github.com/cadam00/corbouli" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.1-blue.svg" alt="Developmental version"></a></li>
+<li><a href="https://github.com/cadam00/corbouli" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.2-blue.svg" alt="Developmental version"></a></li>
 <li><a href="https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://app.codecov.io/gh/cadam00/corbouli?branch=main" class="external-link"><img src="https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://doi.org/10.5281/zenodo.13740089" class="external-link"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.13740089.svg" alt="DOI"></a></li>
