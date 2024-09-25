@@ -71,7 +71,10 @@ Frequency Domain Filter in R</strong><a class="anchor" aria-label="anchor" href=
 <p>Corbae and Ouliaris (<a href="#ref-corbae2006">2006</a>) Frequency
 Domain Filter is used for extracting cycles from either both on
 stationary and non-stationary time series. This is one approximation of
-the ideal band pass filter of the series.</p>
+the ideal band pass filter of the series. The result is close to the one
+of the Baxter-King (<a href="#ref-baxter1999">1999</a>) filter, but
+end-points are directly estimated and so facing the end-point issue is
+not faced.</p>
 <p>The main idea of this filtering algorithm is illustrated in Fig. <a href="#ref-Figure1">1</a> and <a href="#ref-Figure2">2</a>. The main
 idea of the DFTSE subroutine is shown in Fig. <a href="#ref-Figure1">1</a>, where DFT (Discrete Fourier Transform) of the
 times series, then frequencies lower and higher by periods of
