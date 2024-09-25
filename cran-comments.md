@@ -2,7 +2,7 @@
 
 - Update comments on corabe_ouliaris.R file.
 
-- Add README.md and Introduction.Rmd.
+- Update README.md and Introduction.Rmd.
 
 - Update DESCRIPTION text.
 
