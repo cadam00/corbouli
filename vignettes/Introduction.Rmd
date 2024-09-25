@@ -28,7 +28,9 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 Corbae and Ouliaris ([2006](#ref-corbae2006)) Frequency
 Domain Filter is used for extracting cycles from either both on stationary and
 non-stationary time series. This is one approximation of the ideal band pass
-filter of the series.
+filter of the series. The result is close to the one of the Baxter-King
+([1999](#ref-baxter1999)) filter, but end-points are directly estimated and so
+facing the end-point issue is not faced.
 
 The main idea of this filtering algorithm is illustrated
 in Fig. [1](#ref-Figure1) and [2](#ref-Figure2). The main idea of the DFTSE
