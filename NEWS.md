@@ -4,6 +4,8 @@
 
 - Update README.md and Introduction.Rmd.
 
+- Update `corbae_ouliaris` so as to use the correct regression formula.
+
 # corbouli 0.1.1
 
 ## Minor changes
