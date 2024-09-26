@@ -161,23 +161,23 @@ corbae_ouliaris <- function(x, low_freq = NULL, high_freq = NULL){
     dftse_time <- dftse(seq(nrs)/nrs, low_freq, high_freq)
     dftse_x    <- dftse(x, low_freq, high_freq)
 
-    var_dftse_time <- var(dftse_time)
+    noconstcoef <- sum(dftse_x * dftse_time) / sum(dftse_time^2)
 
-    res <- dftse_x - (cov(dftse_x, dftse_time) / var_dftse_time) * dftse_time
+    res <- dftse_x - noconstcoef * dftse_time
 
   } else if (length(dim_x) <= 2){
     nrs <- nrow(x)
     dftse_time <- dftse(seq(nrs)/nrs, low_freq, high_freq)
     dftse_x    <- dftse(x, low_freq, high_freq)
 
-    var_dftse_time <- var(dftse_time)
+    sum_timesq <- sum(dftse_time^2)
 
     res <- x * 1 # make a copy and make sure for it by multiplying by one
 
     # Manual regression without constant per column
     for (i in seq(ncol(x))){
       res[,i] <- dftse_x[,i] -
-                 (cov(dftse_x[,i], dftse_time) / var_dftse_time) * dftse_time
+                 (sum(dftse_x[,i] * dftse_time) / sum_timesq) * dftse_time
     }
   } else {
     stop(paste0("Please provide at most a 2 dimensional object (e.g. matrix,",
