@@ -28,7 +28,7 @@ To cite the official [(CRAN)](https://cran.r-project.org/) version of the
 package, please use
 
 > Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering.
-> R package version 0.1.1. Available at
+> R package version 0.1.2. Available at
 > <https://doi.org/10.32614/CRAN.package.corbouli>.
 
 Alternatively, to cite the latest development version, please use:
