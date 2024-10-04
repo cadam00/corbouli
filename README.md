@@ -1,6 +1,6 @@
 <!-- badges: start -->
   [![CRAN status](https://www.r-pkg.org/badges/version/corbouli)](https://CRAN.R-project.org/package=corbouli)
-  [![Developmental version](https://img.shields.io/badge/devel%20version-0.1.2-blue.svg)](https://github.com/cadam00/corbouli)
+  [![Developmental version](https://img.shields.io/badge/devel%20version-0.1.3-blue.svg)](https://github.com/cadam00/corbouli)
   [![R-CMD-check](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/corbouli?branch=main)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13740089.svg)](https://doi.org/10.5281/zenodo.13740089)
@@ -28,7 +28,7 @@ To cite the official [(CRAN)](https://cran.r-project.org/) version of the
 package, please use
 
 > Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering.
-> R package version 0.1.2. Available at
+> R package version 0.1.3. Available at
 > <https://doi.org/10.32614/CRAN.package.corbouli>.
 
 Alternatively, to cite the latest development version, please use:
