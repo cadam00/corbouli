@@ -2,7 +2,7 @@
 
 ## Minor changes
 
-- Update README.md and Introduction.Rmd.
+- Update README.md, Introduction.Rmd and corbae_ouliaris.Rd.
 
 ## R CMD check results
 

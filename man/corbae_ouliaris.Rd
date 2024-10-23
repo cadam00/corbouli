@@ -42,7 +42,7 @@ For 2-dimensional objects \code{x}, filtering per column is applied.
 }
 
 \value{
-Filtered object with the same length/dimensions and class as the input x.
+Filtered object with the same length/dimensions and class as the input \code{x}.
 }
 
 \references{
