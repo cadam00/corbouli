@@ -17,6 +17,8 @@ BugReports: https://github.com/cadam00/corbouli/issues
 LazyData: true
 Imports: stats
 Suggests: 
+    Rfast,
+    Rfast2,
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)
