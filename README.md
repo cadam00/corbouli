@@ -273,8 +273,8 @@ Extracting Cycles from Nonstationary Data,</span>in Corbae D., Durlauf S.N.,
 & Hansen B.E. (eds.). <em>Econometric Theory and Practice: Frontiers of
 Analysis and Applied Research</em>. Cambridge: Cambridge University Press, pp.
 167–177. 
-doi:<a href="https://doi.org/10.1017/CBO9781139164863.008">
-10.1017/CBO9781139164863.008</a>
+doi:<a href=
+"https://doi.org/10.1017/CBO9781139164863.008">10.1017/CBO9781139164863.008</a>
 
 Ouliaris, S. (2009), <span class="nocase" id="ref-ouliaris2009">Ideal Band Pass
 Filter For Stationary/Non-Stationary Series.</span>
