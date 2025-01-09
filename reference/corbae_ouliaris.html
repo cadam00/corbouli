@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">corbouli</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,14 +53,14 @@ values for filtering.</p></dd>
 <dd><p>Number indicating the lowest period of oscillation as fractions of \(\pi\).
 If <code>low_freq &gt; 1</code>, indicating that the direct frequency of the data is
 provided, this is transformed internally into <code>2 / high_freq</code>. The default
-is NULL, meaning that the <code>ifelse(freq &gt; 1, trunc(freq * 1.5), 2)</code> will be
-used.</p></dd>
+is <code>NULL</code>, meaning that the <code>ifelse(freq &gt; 1, trunc(freq * 1.5), 2)</code>
+will be used.</p></dd>
 
 <dt id="arg-high-freq">high_freq<a class="anchor" aria-label="anchor" href="#arg-high-freq"></a></dt>
 <dd><p>Number indicating the highest period of oscillation as radians of \(\pi\). If
 <code>high_freq &gt; 1</code>, indicating that the direct frequency of the data is
 provided, this is transformed internally into <code>2 / low_freq</code>. The default
-is NULL, meaning that the <code>trunc(freq * 8)</code> will be used.</p></dd>
+is <code>NULL</code>, meaning that the <code>trunc(freq * 8)</code> will be used.</p></dd>
 
 </dl></div>
     <div class="section level2">
