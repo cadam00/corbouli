@@ -272,7 +272,8 @@ Corbae, D. & Ouliaris, S. (2006),<span class="nocase" id="ref-corbae2006">
 Extracting Cycles from Nonstationary Data,</span>in Corbae D., Durlauf S.N.,
 & Hansen B.E. (eds.). <em>Econometric Theory and Practice: Frontiers of
 Analysis and Applied Research</em>. Cambridge: Cambridge University Press, pp.
-167–177. https://doi.org/10.1017/CBO9781139164863.008.
+167–177.
+doi:[ 10.1017/CBO9781139164863.008](https://doi.org/10.1017/CBO9781139164863.008)
 
 Ouliaris, S. (2009), <span class="nocase" id="ref-ouliaris2009">Ideal Band Pass
 Filter For Stationary/Non-Stationary Series.</span>
@@ -284,5 +285,6 @@ Department of Economics.
 
 Shaw, E.S. (1947), <span class="nocase" id="ref-shaw1947">Burns and Mitchell on
 Business Cycles.</span> <em>Journal of Political Economy</em>, <b>55</b>(4):
-pp. 281-298. https://doi.org/10.1086/256533.
+pp. 281-298.
+doi:[ 10.1086/256533](https://doi.org/10.1086/256533)
 
