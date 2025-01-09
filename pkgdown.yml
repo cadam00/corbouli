@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   Introduction: Introduction.html
-last_built: 2025-01-09T19:14Z
+last_built: 2025-01-09T19:19Z
 urls:
   reference: https://cadam00.github.io/corbouli/reference
   article: https://cadam00.github.io/corbouli/articles
