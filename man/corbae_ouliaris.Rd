@@ -16,14 +16,14 @@ values for filtering.
 Number indicating the lowest period of oscillation as fractions of \eqn{\pi}.
 If \code{low_freq > 1}, indicating that the direct frequency of the data is
 provided, this is transformed internally into \code{2 / high_freq}. The default
-is NULL, meaning that the \code{ifelse(freq > 1, trunc(freq * 1.5), 2)} will be
-used.
+is \code{NULL}, meaning that the \code{ifelse(freq > 1, trunc(freq * 1.5), 2)}
+will be used.
 }
 \item{high_freq}{
 Number indicating the highest period of oscillation as radians of \eqn{\pi}. If
 \code{high_freq > 1}, indicating that the direct frequency of the data is
 provided, this is transformed internally into \code{2 / low_freq}. The default
-is NULL, meaning that the \code{trunc(freq * 8)} will be used.
+is \code{NULL}, meaning that the \code{trunc(freq * 8)} will be used.
 }
 }
 \details{

@@ -1,7 +1,7 @@
 <!-- badges: start -->
-  [![CRAN status](https://www.r-pkg.org/badges/version/corbouli)](https://CRAN.R-project.org/package=corbouli)
-  [![Developmental version](https://img.shields.io/badge/devel%20version-0.1.3-blue.svg)](https://github.com/cadam00/corbouli)
-  [![R-CMD-check](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml)
+[![CRAN status](https://www.r-pkg.org/badges/version/corbouli)](https://CRAN.R-project.org/package=corbouli)
+[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.4-blue.svg)](https://github.com/cadam00/corbouli)
+[![R-CMD-check](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/corbouli?branch=main)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13740089.svg)](https://doi.org/10.5281/zenodo.13740089)
 <!-- badges: end -->
@@ -28,13 +28,13 @@ To cite the official [(CRAN)](https://cran.r-project.org/) version of the
 package, please use
 
 > Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering.
-> R package version 0.1.3. Available at
+> R package version 0.1.4. Available at
 > <https://doi.org/10.32614/CRAN.package.corbouli>.
 
 Alternatively, to cite the latest development version, please use:
 
 > Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering
-(v0.1.3). Zenodo. Available at <https://doi.org/10.5281/zenodo.13740089>
+(v0.1.4). Zenodo. Available at <https://doi.org/10.5281/zenodo.13740089>
 
 ## **Corbae-Ouliaris Frequency Domain Filtering**
 
@@ -64,8 +64,8 @@ details of this subroutine can be found at source code of the function
 </p>
 
 The final algorithm is described in Fig. [2](#ref-Figure2),
-where filtered series is the residuals of the regression of $DFSTE(x)$ on
-$DFSTE$ of the normalized trend.
+where filtered series is the residuals of the regression of $DFTSE(x)$ on
+$DFTSE of the normalized trend.
 
 <p align="center">
     <img src="man/figures/figure2.png"

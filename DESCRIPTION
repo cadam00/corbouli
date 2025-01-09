@@ -1,9 +1,10 @@
 Package: corbouli
 Type: Package
 Title: Corbae-Ouliaris Frequency Domain Filtering
-Version: 0.1.3
+Version: 0.1.4
 Authors@R: c(person("Christos", "Adam", role = c("aut", "cre"),
-           email = "econp266@econ.soc.uoc.gr"))
+           email = "econp266@econ.soc.uoc.gr",
+           comment = c(ORCID = "0009-0003-3244-7034")))
 Maintainer: Christos Adam <econp266@econ.soc.uoc.gr>
 Description: Corbae-Ouliaris frequency domain filtering. According to 
              Corbae and Ouliaris (2006) <doi:10.1017/CBO9781139164863.008>,

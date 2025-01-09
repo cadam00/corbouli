@@ -1,8 +1,8 @@
-# corbouli 0.1.3
+# corbouli 0.1.4
 
 ## Minor changes
 
-- Update README.md, Introduction.Rmd, corbae_ouliaris.Rd and DESCRIPTION.
+- Update README.md, Introduction.Rmd, documentation and DESCRIPTION.
 
 ## R CMD check results
 

@@ -1,3 +1,9 @@
+# corbouli 0.1.4
+
+## Minor changes
+
+- Update README.md, Introduction.Rmd, documentation and DESCRIPTION.
+
 # corbouli 0.1.3
 
 ## Minor changes
