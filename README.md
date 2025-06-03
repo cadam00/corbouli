@@ -1,6 +1,6 @@
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/corbouli)](https://CRAN.R-project.org/package=corbouli)
-[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.4-blue.svg)](https://github.com/cadam00/corbouli)
+[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.5-blue.svg)](https://github.com/cadam00/corbouli)
 [![R-CMD-check](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/corbouli/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/cadam00/corbouli/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/corbouli?branch=main)
 [![zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.13740089.svg)](https://doi.org/10.5281/zenodo.13740089)
