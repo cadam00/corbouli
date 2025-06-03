@@ -1,8 +1,8 @@
-# corbouli 0.1.4
+# corbouli 0.1.5
 
 ## Minor changes
 
-- Update README.md, Introduction.Rmd, documentation and DESCRIPTION.
+- Update README.md and Introduction.Rmd.
 
 ## R CMD check results
 

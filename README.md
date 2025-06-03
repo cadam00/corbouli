@@ -72,7 +72,7 @@ details of this subroutine can be found at source code of the function
 
 The final algorithm is described in Fig. [2](#ref-Figure2),
 where filtered series is the residuals of the regression of $DFTSE(x)$ on
-$DFTSE of the normalized trend.
+$DFTSE$ of the normalized trend.
 
 <p align="center">
     <img src="man/figures/figure2.png"
