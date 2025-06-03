@@ -29,7 +29,7 @@ package, please use
 
 <blockquote>
 <p>Adam, C. (2025). corbouli: Corbae-Ouliaris Frequency Domain
-Filtering. R package version 0.1.4. doi:<a
+Filtering. R package version 0.1.5. doi:<a
 href="https://doi.org/10.32614/CRAN.package.corbouli"
 class="uri">10.32614/CRAN.package.corbouli</a></p>
 </blockquote>
@@ -38,7 +38,7 @@ Alternatively, to cite the latest development version, please use:
 
 <blockquote>
 <p>Adam, C. (2025). corbouli: Corbae-Ouliaris Frequency Domain
-Filtering. (v0.1.4). Zenodo. doi:<a
+Filtering. (v0.1.5). Zenodo. doi:<a
 href="https://doi.org/10.32614/CRAN.package.corbouli"
 class="uri">10.5281/zenodo.13740089</a></p>
 </blockquote>
